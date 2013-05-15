@@ -1,4 +1,134 @@
-.green { color: #3a3;}
-.red { color: #f33;}
-.blue { color: #33f;}
-.grey { color: #888;}
+body {
+  font-family: "helvetica neue", "helvetica", "lucida grande", arial, sans-serif;
+  color: white;
+  background: url("img/stressed_linen.png");
+  background-color: black;
+  line-height: 1.4;
+  font-size: 18px; }
+  body.fullScreen {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+
+#preso a {
+  color: #6d4927;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid #6d4927; }
+  #preso a:visited, #preso a:link {
+    color: #6d4927;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #6d4927; }
+#preso .highlight {
+  color: darkred; }
+#preso .features img {
+  display: inline-block;
+  padding: 0.1em;
+  margin: 0; }
+#preso .family ul li {
+  display: inline-block;
+  float: left;
+  width: 50%; }
+#preso .light-on-dark h1 {
+  color: black;
+  background-color: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 0.1em 0.5em;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9; }
+#preso .light-on-dark h3 {
+  color: black;
+  background-color: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 0.1em 0.5em;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  position: relative;
+  clear: both;
+  top: 5em;
+  left: 0; }
+#preso .thanks li {
+  font-size: 22px; }
+#preso .gis img {
+  float: right; }
+#preso code, #preso pre {
+  font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+  color: black;
+  padding: 0.5em;
+  font-size: 18px;
+  background-color: transparent; }
+#preso code {
+  display: block;
+  border: 1px dashed #65aaba;
+  background-color: #eeeeee; }
+
+h1 {
+  font-size: 48px;
+  color: #4183c4; }
+
+h2 {
+  font-size: 36px;
+  color: #a4eeff; }
+
+h3 {
+  font-size: 24px; }
+
+#preso, .slide {
+  background-color: transparent;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  height: 768px; }
+
+#preso, .slide {
+  border: none !important;
+  margin-top: -30px; }
+
+#preso img, #preso .gmaps {
+  margin: 1em auto;
+  box-shadow: #666666 0 3px 5px;
+  -webkit-box-shadow: #666666 0 3px 5px;
+  -moz-box-shadow: #666666 0 3px 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  background-color: white;
+  padding: 15px; }
+
+#preso h2, #preso ul, #preso code {
+  display: block;
+  width: 580px;
+  margin: 0 auto;
+  text-align: left; }
+#preso ul {
+  margin: 0 auto;
+  text-align: left;
+  list-style-type: none; }
+  #preso ul > li {
+    font-size: 28px;
+    margin-bottom: 0.2em;
+    align: left; }
+    #preso ul > li:before {
+      content: " - "; }
+    #preso ul > li > ul > li {
+      margin-left: 1em;
+      margin-bottom: 0.2em;
+      font-size: 0.8em;
+      list-style-type: none; }
+      #preso ul > li > ul > li:before {
+        content: "- "; }
