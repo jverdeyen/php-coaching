@@ -1,8 +1,7 @@
 {
     "name": "PHP drill",
     "sections": [
-        {
-            "section": "introduction"
-        }
+        { "section": "introduction" },
+        { "section": "best-practices" }
     ]
 }

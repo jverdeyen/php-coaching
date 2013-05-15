@@ -1,20 +1,30 @@
-!SLIDE center light-on-dark transition=fade
+!SLIDE center cover transition=fade
 
-# PHP drill
+# PHP best practices
 ## Head Office - 21 & 22 mei 2013
 ### door Joeri Verdeyen
+
+!SLIDE center cover
+# Even kort over mezelf #
+![background](../img/background-biker.jpg)
 
 !SLIDE transition=fade
 # Joeri Verdeyen
 * PHP ontwikkelaar (&plusmn;8 jaar)
 * Symfony2 fan
 * Clean code freak
+* Mountainbiker/wielertoerist
 
 !SLIDE
 # Contact
 * info@jverdeyen.be
 * github.com/jverdeyen
 * @jverdeyen
+
+!SLIDE center cover
+# Wat bekijken we? #
+![background](../img/background-classroom.jpg)
+
 
 !SLIDE incremental
 # Wat?
