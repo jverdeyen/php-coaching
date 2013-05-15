@@ -517,15 +517,24 @@
 			]
 		]
 	},
-	"buffers":
-	[
-	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 375.0,
+		"height": 313.0,
 		"selected_items":
 		[
+			[
+				"mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"json",
+				"Indent JSON"
+			],
 			[
 				"pack",
 				"Package Control: Install Package"
@@ -577,10 +586,6 @@
 			[
 				"sq",
 				"Set Syntax: SQL"
-			],
-			[
-				"mark",
-				"Set Syntax: Markdown"
 			],
 			[
 				"ql",
@@ -647,7 +652,7 @@
 				"Package Control: List Packages"
 			]
 		],
-		"width": 525.0
+		"width": 561.0
 	},
 	"console":
 	{
@@ -664,6 +669,10 @@
 	},
 	"file_history":
 	[
+		"/Volumes/kona/sites/dev.jverdeyen.be/php-coaching/style.css",
+		"/Volumes/kona/sites/dev.jverdeyen.be/php-coaching/presentation-php-coaching.sublime-project",
+		"/Volumes/kona/sites/dev.jverdeyen.be/php-coaching/showoff.json",
+		"/Volumes/kona/sites/dev.jverdeyen.be/php-coaching/introduction/01_slide.md",
 		"/Volumes/devsrvch.xmodels-live.ch/xmodels-symfony/current/src/XMod/ApiBundle/Controller/WebcamsController.php",
 		"/Volumes/devsrvch.xmodels-live.ch/xmodels-symfony/current/src/XMod/CommonBundle/Service/Impl/ModelService.php",
 		"/Volumes/devsrvch.xmodels-live.ch/xmodels-symfony/current/src/XMod/CommonBundle/Dao/BaseDao.php",
@@ -787,11 +796,7 @@
 		"/Volumes/devsrvch.xmodels-live.ch/xmodels-symfony/current/src/XMod/ModeratorBundle/Resources/config/services.xml",
 		"/Volumes/devsrvch.xmodels-live.ch/xmodels-symfony/current/src/XMod/ModeratorBundle/Service/Impl/Action/IdentityActionService.php",
 		"/Volumes/devsrvch.xmodels-live.ch/xmodels-symfony/current/src/XMod/ModeratorBundle/Controller/SnapshotsController.php",
-		"/Volumes/devsrvch.xmodels-live.ch/xmodels-symfony/current/src/XMod/CommonBundle/Service/Impl/DirectoryService.php",
-		"/Volumes/devsrvch.xmodels-live.ch/xmodels-symfony/current/src/XMod/CommonBundle/Command/ThisMonthRevenueCommand.php",
-		"/Volumes/devsrvch.xmodels-live.ch/xmodels-symfony/current/src/XMod/CommonBundle/Service/Impl/CronService.php",
-		"/Volumes/devsrvch.xmodels-live.ch/xmodels-symfony/current/src/XMod/ModeratorBundle/Controller/DownloadController.php",
-		"/Volumes/devsrvch.xmodels-live.ch/xmodels-symfony/current/src/XMod/CommonBundle/Utils/FileUtils.php"
+		"/Volumes/devsrvch.xmodels-live.ch/xmodels-symfony/current/src/XMod/CommonBundle/Service/Impl/DirectoryService.php"
 	],
 	"find":
 	{
@@ -916,6 +921,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"coaching",
+			";\n",
+			"dark",
+			"light",
+			"one",
 			"url",
 			"true",
 			"setSanctionFinal",
@@ -1038,12 +1048,7 @@
 			"hasSyspayAccount",
 			"hasSysPayAccount",
 			"getSysPayAccount",
-			"hasSysPayAccount",
-			"SysPayAccount",
-			"sysPayAccount",
-			"publiu",
-			"SysPayAccount",
-			"getCammerSysPayAccount"
+			"hasSysPayAccount"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1066,14 +1071,6 @@
 		"whole_word": false,
 		"wrap": true
 	},
-	"groups":
-	[
-		{
-			"sheets":
-			[
-			]
-		}
-	],
 	"incremental_find":
 	{
 		"height": 32.0
