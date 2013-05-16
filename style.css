@@ -46,6 +46,9 @@ body {
   padding: 0.1em 0.5em;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   opacity: 0.9; }
+#preso .cover h2 {
+  display: inline-block;
+  width: auto; }
 #preso code, #preso pre {
   font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
   color: black;
@@ -79,17 +82,13 @@ h3 {
   border: none !important; }
 
 #preso img {
-  margin: 1em auto;
-  box-shadow: #666666 0 3px 5px;
-  -webkit-box-shadow: #666666 0 3px 5px;
-  -moz-box-shadow: #666666 0 3px 5px;
-  border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  background-color: white;
-  padding: 15px; }
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px; }
 
-#preso h2, #preso code {
+#preso h2 {
   display: block;
   margin: 0 auto;
   text-align: left;
@@ -99,7 +98,7 @@ h3 {
   display: block;
   margin: 0 auto;
   text-align: left;
-  width: 700px;
+  width: 780px;
   list-style-type: none; }
   #preso ul > li {
     font-size: 24px;

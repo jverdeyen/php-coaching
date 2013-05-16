@@ -1,14 +1,14 @@
-!SLIDE center cover transition=fade
+!SLIDE center cover
 
 # PHP best practices
 ## Head Office - 21 & 22 mei 2013
-### door Joeri Verdeyen
+### Joeri Verdeyen
 
 !SLIDE center cover
 # Even kort over mezelf #
 ![background](../img/background-biker.jpg)
 
-!SLIDE transition=fade
+!SLIDE
 # Joeri Verdeyen
 * PHP ontwikkelaar (&plusmn;8 jaar)
 * Symfony2 fan

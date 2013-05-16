@@ -4,11 +4,11 @@
 
 !SLIDE
 # problemen opgelost door source control
-* Hoe weet ik wanneer iemand iets gedaan heeft
-* Hoe weet ik waarom iemand iets gedaan heeft
-* Hoe weet iemand anders waarom ik iets gedaan heb
-* Wat is er gewijzigd sinds..
-* Hoe krijg ik de laatste versie binnen
+* hoe weet ik wanneer iemand iets gedaan heeft
+* hoe weet ik waarom iemand iets gedaan heeft
+* hoe weet iemand anders waarom ik iets gedaan heb
+* wat is er gewijzigd sinds..
+* hoe krijg ik de laatste versie binnen
 
 !SLIDE
 # soorten source control
@@ -18,13 +18,14 @@
 !SLIDE
 # distributed source control
 ## werkwijze
-* developer werken lokaal op kopie of branches
-* wijzigingen worden gedeeld door repo's en/of developers
-* focus: wijzigingen delen
+* developers werken lokaal (copy/branch)
+* wijzigingen delen door repositories/developers
+* focus: wijzigingen delen (patches)
 
 ## voordelen
 * geen centrale server (SPOF)
 * minder disk usage
+
 .notes single point of failure
 
 !SLIDE
@@ -32,11 +33,24 @@
 ## werkwijze
 * developer pushen/pullen naar centrale server
 * focus: syncing, tracking, backing up
-
-
-!SLIDE
-# centralized source control
 ## voordelen
 * snel
 * merging gaat makkelijk
 * offline werken (beperkt)
+
+!SLIDE
+# verschillende oplossing
+* git (voorkeur)
+* svn
+* mercurial
+* arch
+
+!SLIDE
+# gitlab
+git management software voor projecten
+
+!SLIDE center cover
+![commits](../img/gitlab/commits.png)
+
+!SLIDE center cover
+![network](../img/gitlab/network.png)

@@ -7,3 +7,6 @@
     * http://php.blogaboutwhatever.com/2011/12/howto-make-your-live-easier-with-an-autoloader/
     * https://phpbestpractices.org
     * http://net.tutsplus.com/tutorials/php/why-you-should-be-using-phps-pdo-for-database-access/
+    * http://net.tutsplus.com/tutorials/php/psr-huh/
+    * https://github.com/php-fig/fig-standards/tree/master/accepted
+    * http://www.php-fig.org
