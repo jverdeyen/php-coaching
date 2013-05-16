@@ -10,3 +10,6 @@
     * http://net.tutsplus.com/tutorials/php/psr-huh/
     * https://github.com/php-fig/fig-standards/tree/master/accepted
     * http://www.php-fig.org
+    * http://php.net/manual
+    * http://blog.loftdigital.com/blog/php-utf-8-cheatsheet
+    * http://phpbench.com

@@ -47,5 +47,3 @@ detecteer inbreuk tegen specifieke standard
 !SLIDE
 ## PHP-CS-Fixer
 fix inbreuk tegen specifieke standard
-
-![phpcs](../img/phpcs.png)
