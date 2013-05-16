@@ -1,5 +1,6 @@
-!SLIDE center
+!SLIDE center cover
 # passwords
+![background](../img/background-passwords.jpg)
 
 !SLIDE
 # passwords

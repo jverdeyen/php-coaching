@@ -1,5 +1,6 @@
-!SLIDE center
+!SLIDE center cover
 # DateTime
+![background](../img/background-datetime.jpg)
 
 !SLIDE
 # vroeger
