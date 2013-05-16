@@ -76,10 +76,9 @@ h3 {
   height: 768px; }
 
 #preso, .slide {
-  border: none !important;
-  margin-top: -30px; }
+  border: none !important; }
 
-#preso img, #preso .gmaps {
+#preso img {
   margin: 1em auto;
   box-shadow: #666666 0 3px 5px;
   -webkit-box-shadow: #666666 0 3px 5px;
@@ -90,17 +89,20 @@ h3 {
   background-color: white;
   padding: 15px; }
 
-#preso h2, #preso ul, #preso code {
+#preso h2, #preso code {
   display: block;
-  width: 580px;
-  margin: 0 auto;
-  text-align: left; }
-#preso ul {
   margin: 0 auto;
   text-align: left;
+  width: 700px; }
+#preso ul {
+  margin: 0 auto;
+  display: block;
+  margin: 0 auto;
+  text-align: left;
+  width: 700px;
   list-style-type: none; }
   #preso ul > li {
-    font-size: 28px;
+    font-size: 24px;
     margin-bottom: 0.2em;
     align: left; }
     #preso ul > li:before {

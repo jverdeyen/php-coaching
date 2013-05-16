@@ -1,3 +1,0 @@
-!SLIDE
-# Bronnen
-* flickr.com

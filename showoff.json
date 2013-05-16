@@ -2,6 +2,8 @@
     "name": "PHP drill",
     "sections": [
         { "section": "introduction" },
-        { "section": "best-practices" }
+        { "section": "best-practices-general" },
+        { "section": "best-practices" },
+        { "section": "closing" }
     ]
 }

@@ -22,12 +22,12 @@
 * @jverdeyen
 
 !SLIDE center cover
-# Wat bekijken we? #
+# Op de agenda? #
 ![background](../img/background-classroom.jpg)
 
 
 !SLIDE incremental
-# Wat?
+# Op de agenda?
 * Algemene best practices
 * Toepassing via voorbeeld
 * Begin OO principes
