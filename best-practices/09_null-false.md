@@ -50,10 +50,11 @@
     isset($x); // true
 
 !SLIDE
-# 0 vs. lege string
+# 0 vs. string
 
     @@@ php
     0 == ''
+    0 == 'string'
 
 .notes true
 

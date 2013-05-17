@@ -40,7 +40,6 @@
 * ""
 * "0"
 * NULL of null
-* array()
 
 !SLIDE
 # mysterie in_array()
