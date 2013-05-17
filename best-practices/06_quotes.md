@@ -1,5 +1,5 @@
-!SLIDE center
-# Quotes
+!SLIDE center cover
+# single vs. double quotes
 
 !SLIDE
 # enkele vs. dubbele aanhalingstekens

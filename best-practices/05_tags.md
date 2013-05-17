@@ -1,4 +1,6 @@
-!SLIDE center
+!SLIDE center cover
+![background](../img/background-tags.jpg)
+
 # PHP tags
 
 !SLIDE
