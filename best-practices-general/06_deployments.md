@@ -7,6 +7,7 @@
 * code naar productie zetten
 * steeds dezelfde acties automatiseren
 * one click -> code live
+* rollback
 
 !SLIDE
 # deployment tips
