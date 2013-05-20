@@ -13,3 +13,4 @@
     * http://php.net/manual
     * http://blog.loftdigital.com/blog/php-utf-8-cheatsheet
     * http://phpbench.com
+    * http://khaidoan.wikidot.com/php

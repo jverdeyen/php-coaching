@@ -1,7 +1,7 @@
 !SLIDE center cover
 
 # PHP best practices
-## Head Office - 21 & 22 mei 2013
+## Head Office - 22 & 23 mei 2013
 ### Joeri Verdeyen
 
 !SLIDE center cover
