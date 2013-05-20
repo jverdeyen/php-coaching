@@ -29,6 +29,5 @@
 !SLIDE incremental
 # Op de agenda?
 * Algemene best practices
+* MVC, Doctrine, Twig
 * Toepassing via voorbeeld
-* Begin OO principes
-* MVC en waarom

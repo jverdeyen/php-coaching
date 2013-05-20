@@ -13,7 +13,7 @@
 * accept/reject
 
 # data sanitization
-* zeker zijn dat data onschadelijk is voor we het opslaan of tonen
+* zeker zijn dat data onschadelijk is voor opslaan of tonen
 * strip/encode
 
 !SLIDE

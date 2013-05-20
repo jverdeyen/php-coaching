@@ -62,7 +62,7 @@ om gebreken in de code aan te geven
 om gebreken in de code aan te geven
 
 * TODO: dingen die nog gedaan moeten worden
-* FIXME: kapotte code
+* FIXME: defecte code
 * HACK: toegeving onbevallige oplossing voor probleem
 * XXX: gevaar! serieus probleem hier
 

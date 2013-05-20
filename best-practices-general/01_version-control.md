@@ -17,6 +17,7 @@
 
 !SLIDE
 # distributed source control
+
 ## werkwijze
 * developers werken lokaal (copy/branch)
 * wijzigingen delen door repositories/developers
@@ -33,13 +34,14 @@
 ## werkwijze
 * developer pushen/pullen naar centrale server
 * focus: syncing, tracking, backing up
+
 ## voordelen
 * snel
 * merging gaat makkelijk
 * offline werken (beperkt)
 
 !SLIDE
-# verschillende oplossing
+# diverse oplossingen
 * git (voorkeur)
 * svn
 * mercurial

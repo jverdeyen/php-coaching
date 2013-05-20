@@ -15,5 +15,5 @@
 # Test Driven Development (TDD)
 * schrijf eerst je tests
 * laat de tests falen
-* schrijf code tot tests slangen
+* schrijf code tot tests slagen
 * refactor code en herhaal
