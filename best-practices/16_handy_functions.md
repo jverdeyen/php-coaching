@@ -60,3 +60,31 @@ met explode
     } else {
         echo 'The file is not readable';
     }
+
+!SLIDE
+# uniqid
+
+    @@@ php
+    echo md5(time() . mt_rand(1,1000000));
+
+    echo uniqid(); // 4bd67c9472340
+
+    echo uniqid('foo_',true);  // foo_4bd67d6cd8b8f
+
+    echo uniqid('bar_',true);  // bar_4bd67da367b650.43684647
+
+
+!SLIDE
+# gzcompress
+
+    @@@ php
+    $veryLongString = "Lorem ipsum dolor sit amet, consectetur adipiscing elit...";
+
+    echo strlen($veryLongString); // 800
+
+    $compressed = gzcompress($veryLongString);
+
+    echo strlen($compressed); // 418
+
+    $original = gzuncompress($compressed);
+
