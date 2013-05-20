@@ -141,7 +141,8 @@ update alle versies uit composer.json
     $ composer update
     $ composer update doctrine/common
 
+!SLIDE center
+# Composer
+packagist.org
 
-
-
-
+![packagist](../img/packagist.png)
