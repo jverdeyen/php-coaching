@@ -46,6 +46,33 @@ sql injection, XSS (Cross-site Scripting)
 * htmlentities()
     * simpel
     * snel
+    * geen validatie
 * HTML Purifier
     * complex
     * traag bij zeer complexe html
+
+!SLIDE
+# sanitize html, input en output
+htmlentities
+
+    @@@ php
+    // evil html van een formulier
+    $evilHtml = '<div onclick="xss();">Mua-ha-ha!  Twiddling my evil mustache...</div>';
+
+    $safeHtml = htmlentities($evilHtml, ENT_QUOTES, 'UTF-8');
+
+
+.notes ENT_QUOTES voor quotes (double/single), force utf-8 (standaard vanaf 5.4), htmlspecialchars -> zet bv & om naar &amp;
+
+!SLIDE
+# sanitize html, input en output
+HTML Purifier
+
+    @@@ php
+    require_once('htmlpurifier-4.4.0/HTMLPurifier.auto.php');
+
+    $evilHtml = '<div onclick="xss();">Mua-ha-ha!  Twiddling my evil mustache...</div>';
+
+    $purifier = new HTMLPurifier(HTMLPurifier_Config::createDefault());
+
+    $safeHtml = $purifier->purify($evilHtml);
