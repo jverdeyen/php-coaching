@@ -17,3 +17,4 @@
 * http://khaidoan.wikidot.com/php
 * http://htmlpurifier.org
 * http://blog.andho.com/2011-12-23/talking-about-composer-a-package-manager-for-php/
+* https://speakerdeck.com/csuarez/plantillas-en-symfony2-twig
