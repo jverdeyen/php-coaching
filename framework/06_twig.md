@@ -8,7 +8,7 @@
 * templating language voor PHP
 * jinja2 syntax en idee
 * flexibel en volledig aanpasbaar
-*
+
 .notes jinja2 = template engine in python
 
 !SLIDE
@@ -227,14 +227,14 @@ array("kona", "scott", "bmc") => "KONA, SCOTT, BMC"
     @@@ php
     {{ post.publishDate | date('Y-m-d') }}
 
-    {{ string | escape('js') }}
-    {{ string | e('js') }}
+    {{ stringForJavascript | escape('js') }}
+    {{ stringForJavascript | e('js') }}
 
-    {{ rawHtml | raw }}
+    {{ thisIsHtml | raw }}
 
-    {{ jsonString | json_encode }}
+    {{ iNeedJson | json_encode }}
 
-    {{ multiLine | nl2br }}
+    {{ iHasLineBreaks | nl2br }}
 
     {{ "%s% users" | replace( { '%s%': number } ) }}
 
@@ -323,7 +323,12 @@ MyTwigExtension.php
 # eigen functies
 
     @@@ php
-    {{ myFunction('hello') }}
+    <p>{{ myFunction('hello') }}</p>
+
+output
+
+    @@@ html
+    <p>My function says: hello</p>
 
 
 !SLIDE center
@@ -349,7 +354,7 @@ home.html.twig
 
     <p>{{ helper.link('http://www.google.be', 'google') }}</p>
 
-browser
+output
 
     @@@ html
     <p><a href="http://www.google.be">google</a></p>

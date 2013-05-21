@@ -1,57 +1,60 @@
 !SLIDE center cover
-#source control
+#version control
 ![background](../img/background-source-control.png)
 
 !SLIDE
-# problemen opgelost door source control
-* hoe weet ik wanneer iemand iets gedaan heeft
-* hoe weet ik waarom iemand iets gedaan heeft
-* hoe weet iemand anders waarom ik iets gedaan heb
-* wat is er gewijzigd sinds..
-* hoe krijg ik de laatste versie binnen
+# problemen opgelost door version control
+* wie
+* wat
+* waar
+* wanneer
+* waarom
+* hoe
+* laatste versie
 
 !SLIDE
-# soorten source control
-* distributed
+# soorten version control
 * non-distributed (centralized)
+* distributed
+
+!SLIDE center
+# centralized version control
+![distributed](../img/cvc.png)
 
 !SLIDE
-# distributed source control
-
+# centralized version control
 ## werkwijze
-* developers werken lokaal (copy/branch)
-* wijzigingen delen door repositories/developers
-* focus: wijzigingen delen (patches)
+* centrale server
+* single point of failure
+* eerder traag
+* ongevraagde wijzigingen -> build fail voor iedereen
+* braching/mergen is vaak moeilijk
 
-## voordelen
-* geen centrale server (SPOF)
-* minder disk usage
-
-.notes single point of failure
+!SLIDE center
+# distributed version control
+![distributed](../img/dvc.png)
 
 !SLIDE
-# centralized source control
+# distributed version control
 ## werkwijze
-* developer pushen/pullen naar centrale server
-* focus: syncing, tracking, backing up
-
-## voordelen
+* developers werken lokaal, commits
 * snel
-* merging gaat makkelijk
-* offline werken (beperkt)
+* offline
+* branching/mergen gaat makkelijk
+
 
 !SLIDE
 # diverse oplossingen
 * git (voorkeur)
-* svn
 * mercurial
+* svn
 * arch
 
 !SLIDE
 # gitlab
 git management software voor projecten
 
-!SLIDE center cover
+!SLIDE center
 ![commits](../img/gitlab/commits.png)
 
 !SLIDE center cover

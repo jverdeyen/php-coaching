@@ -1,7 +1,12 @@
+!SLIDE center cover
+# That's it!
+
+
 !SLIDE bullets center smaller
 # Bronnen
 
-* flickr.com
+* http://flickr.com
+* http://google.com
 * http://www.slideshare.net/ansarahmed/php-best-practices-2391877
 * http://www.slideshare.net/weierophinney/best-practices-of-php-development-presentation
 * http://net.tutsplus.com/tutorials/php/30-php-best-practices-for-beginners/
@@ -18,3 +23,4 @@
 * http://htmlpurifier.org
 * http://blog.andho.com/2011-12-23/talking-about-composer-a-package-manager-for-php/
 * https://speakerdeck.com/csuarez/plantillas-en-symfony2-twig
+* http://phpsnips.com/554/Strong-Email-Verification#.UZvI4pVIYlL

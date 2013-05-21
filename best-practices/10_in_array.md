@@ -13,7 +13,7 @@
         'tiger' => false
     );
 
-    in_array('tiger', $array);
+    in_array('tiger', $array); // true
 
 .notes true, raar, want in_array checked op waarde
 

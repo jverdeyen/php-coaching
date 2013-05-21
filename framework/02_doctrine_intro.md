@@ -1,9 +1,9 @@
 !SLIDE center cover
-#Doctrine2
+#Doctrine
 
 !SLIDE
-# Wat is Doctrine2
-Doctrine2 bestaat uit 3 libraries (packages)
+# Wat is Doctrine
+Doctrine bestaat uit 3 libraries (packages)
 
 * DBAL (Database Abstraction Layer)
 * ORM (Object Relational Mapper)

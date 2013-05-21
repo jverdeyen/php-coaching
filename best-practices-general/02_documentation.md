@@ -4,7 +4,7 @@
 
 !SLIDE
 # wanneer **GEEN** commentaar schrijven
-omdat het kan
+nutteloze commentaar
 
     @@@ php
     // find the needle in a heap
@@ -23,7 +23,7 @@ omdat het kan
 
 !SLIDE
 # wanneer **GEEN** commentaar schrijven
-de slechte functie naam te verdoezelen
+slechte functie benaming
 
     @@@ php
     // Remove items from the Reply as stated in the Request
@@ -36,8 +36,8 @@ de slechte functie naam te verdoezelen
 .notes wat betekend clean? wat wordt er gecleaned?
 
 !SLIDE
-# wanneer commentaar schrijven
-manier van denken uit te leggen
+# wanneer WEL commentaar schrijven
+manier van denken
 
     @@@ php
     // This class is getting messy. Maybe we should create a seperate 'Address' class
@@ -49,8 +49,8 @@ manier van denken uit te leggen
 .notes niet iedereen ziet meteen waarom een keuze gemaakt is
 
 !SLIDE
-# wanneer commentaar schrijven
-om gebreken in de code aan te geven
+# wanneer WEL commentaar schrijven
+gebreken in code
 
     @@@ php
     // TODO: use a faster algorithm
@@ -58,18 +58,18 @@ om gebreken in de code aan te geven
     // TODO(joeri): this should also handle other image formats besides JPEG
 
 !SLIDE
-# wanneer commentaar schrijven
-om gebreken in de code aan te geven
+# wanneer WEL commentaar schrijven
+gebreken in code
 
-* TODO: dingen die nog gedaan moeten worden
+* TODO: wat nog gedaan moet worden
 * FIXME: defecte code
 * HACK: toegeving onbevallige oplossing voor probleem
-* XXX: gevaar! serieus probleem hier
+* XXX: gevaar! ernstig probleem hier
 
 .notes handig om project search te doen
 
 !SLIDE
-# wanneer commentaar schrijven
+# wanneer WEL commentaar schrijven
 constanten
 
     @@@ php
@@ -80,8 +80,8 @@ constanten
     const MAX_IMAGE_SIZE_KB = 500;
 
 !SLIDE
-# wanneer commentaar schrijven
-samenvatten van stukken code
+# wanneer WEL commentaar schrijven
+samenvatten
 
     @@@ php
     // zoek alle item die de klant zelf aangekocht heeft
@@ -98,15 +98,41 @@ samenvatten van stukken code
 !SLIDE
 # samenvatting
 * manier van denken uit leggen
-* om gebreken in de code aan te geven
+* gebreken in code
 * constanten
-* samenvatten van stukken code
-* onduidelijke stukken code
-* uitzonderlijke beslissingen uit te leggen
-* algemeen doel van een class te beschrijven
+* samenvatten
+* onduidelijke code
+* uitzonderlijke beslissingen
+* algemeen doel van een class
+
 
 !SLIDE
-# hulpmiddelen voor documentatie
+# hulpmiddelen
+DocBlock (vgl. Javadoc)
+
+    @@@ php
+     /**
+      * This is the short description for a DocBlock.
+      *
+      * This is the long description for a DocBlock. This text may contain
+      * multiple lines and even some _markdown_.
+      *
+      * * Markdown style lists function too
+      * * Just try this out once
+      *
+      * The section after the long description contains the tags; which provide
+      * structured meta-data concerning the given element.
+      *
+      * @author  Joeri Verdeyen <info@jverdeyen.be>
+      *
+      * @since 1.0
+      *
+      * @param int    $example  This is an example function/method parameter description.
+      * @param string $example2 This is a second example.
+      */
+
+!SLIDE
+# hulpmiddelen
 * phpDocumentor
 * phpdox
 * DocBook (End User)

@@ -3,17 +3,17 @@
 ![background](../img/background-code-styling.jpg)
 
 !SLIDE
-# waarom coding standards gebruiken?
+# waarom?
 * focus op code, niet op formattering
 * consistentie
 * leesbaarheid
-* samenwerking
+* betere samenwerking
 * onderhoud
 
 !SLIDE
-# wat omvat een coding standard?
-* file, class, variable naamconventie
-* codeopmaak conventies
+# wat?
+* naamconventies (file, class, variable)
+* codeopmaak
 * richtlijnen voor consistentie in de code
 * gelijkmatigheid
 
@@ -27,6 +27,7 @@
 
 !SLIDE
 PHP-FIG
+
 ![php-fig](../img/php-fig.org.png)
 
 !SLIDE
@@ -38,12 +39,21 @@ PSR: "PHP Standards Recommendation"
 * PSR-2: coding style standard
 * PSR-3: logger interface
 
-!SLIDE
-## PHP CodeSnuffer
+!SLIDE center
+# handige tools
+
+!SLIDE center
+## PHP CodeSniffer
 detecteer inbreuk tegen specifieke standard
 
 ![phpcs](../img/phpcs.png)
 
-!SLIDE
+!SLIDE center
 ## PHP-CS-Fixer
 fix inbreuk tegen specifieke standard
+
+!SLIDE center
+## PHP Mess Detector
+detecteer mogelijke problemen, ongebruikte code
+
+![phpcs](../img/phpmd.png)

@@ -9,7 +9,6 @@
 !SLIDE
 # design pattern
 * een manier om applicaties te maken
-* object georienteerd
 * splits logica van presentatie
 * loose coupling
 * leesbaarheid

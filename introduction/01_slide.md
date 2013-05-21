@@ -5,30 +5,30 @@
 ### Joeri Verdeyen
 
 !SLIDE center cover
-# Even kort over mezelf #
+# even kort over mezelf #
 ![background](../img/background-biker.jpg)
 
 !SLIDE
 # Joeri Verdeyen
 * PHP ontwikkelaar (+8 jaar)
 * Symfony2 fan
-* Clean code freak
-* Mountainbiker/wielertoerist
+* clean code freak
+* mountainbiker/wielertoerist
 
 !SLIDE
-# Contact
+# contact
 * info@jverdeyen.be
 * github.com/jverdeyen
-* @jverdeyen
+* twitter: @jverdeyen
 
 !SLIDE center cover
-# Op de agenda? #
+# op de agenda? #
 ![background](../img/background-classroom.jpg)
 
 
 !SLIDE incremental
-# Op de agenda?
-* Algemene best practices
+# op de agenda?
+* algemene programmer best practices
 * PHP best practices
 * MVC, Doctrine, Composer, Twig
-* Refactoring van contact formulier
+* refactoring van contact formulier

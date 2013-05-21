@@ -98,7 +98,7 @@
 !SLIDE
 # insert performance
 
-insert 20 records met Doctrine2
+insert 20 records met Doctrine
 
     @@@ php
     for ($i = 0; $i < 20; $++) {
@@ -121,15 +121,15 @@ insert 20 records via raw PHP
 
 !SLIDE
 ## insert performance
-Doctrine2 is sneller! Waarom?
+Doctrine is sneller! Waarom?
 
-* Doctrine2: 1 transaction voor geheel
+* Doctrine: 1 transaction voor geheel
 * raw PHP: 1 transaction voor elke insert
 
 !SLIDE
 # insert performance
 
-wat doet Doctrine2:
+wat doet Doctrine:
 
     @@@ php
     mysql_query('START TRANSACTION', $link);

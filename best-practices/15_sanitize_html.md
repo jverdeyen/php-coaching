@@ -9,11 +9,11 @@
 
 !SLIDE
 # data validation
-* zeker zijn dat we opslaan wat we willen opslaan
+* alleen opslaan wat we willen opslaan
 * accept/reject
 
 # data sanitization
-* zeker zijn dat data onschadelijk is voor opslaan of tonen
+* data onschadelijk voor opslaan of tonen
 * strip/encode
 
 !SLIDE
@@ -34,8 +34,8 @@ sql injection, XSS (Cross-site Scripting)
 !SLIDE
 # sanitize html, input en output
 * htmlentities()
-    * niet strip_tags()
-    * niet filter_var()
+    * niet strip_tags() (dumb)
+    * niet filter_var() (line breaks)
 * HTML Purifier
 
 .notes strip_tags (dumb, als je <> vergeet), fitler_var -> line breaks (ascii, max 32bit)
