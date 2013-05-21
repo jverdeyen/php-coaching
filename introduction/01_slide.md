@@ -10,7 +10,7 @@
 
 !SLIDE
 # Joeri Verdeyen
-* PHP ontwikkelaar (&plusmn;8 jaar)
+* PHP ontwikkelaar (+8 jaar)
 * Symfony2 fan
 * Clean code freak
 * Mountainbiker/wielertoerist
@@ -29,5 +29,6 @@
 !SLIDE incremental
 # Op de agenda?
 * Algemene best practices
-* MVC, Doctrine, Twig
-* Toepassing via voorbeeld
+* PHP best practices
+* MVC, Doctrine, Composer, Twig
+* Refactoring van contact formulier
