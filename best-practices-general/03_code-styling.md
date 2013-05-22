@@ -40,6 +40,10 @@ PSR: "PHP Standards Recommendation"
 * PSR-3: logger interface
 
 !SLIDE center
+PSR-2
+![php-fig](../img/PSR-2.png)
+
+!SLIDE center
 # handige tools
 
 !SLIDE center

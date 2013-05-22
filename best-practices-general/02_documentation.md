@@ -139,4 +139,7 @@ DocBlock (vgl. Javadoc)
 
 .notes DocBook: hoe de code gebruiken, andere: wat code doet
 
+!SLIDE center
+# phpDocumentor
+![phpdoc](../img/phpdoc1.png)
 

@@ -50,6 +50,10 @@
 * svn
 * arch
 
+!SLIDE center
+# git
+![git-log](../img/git-log-default-output.png)
+
 !SLIDE
 # gitlab
 git management software voor projecten
