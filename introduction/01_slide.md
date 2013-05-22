@@ -28,7 +28,7 @@
 
 !SLIDE incremental
 # op de agenda?
-* algemene programmer best practices
+* algemene programming best practices
 * PHP best practices
 * MVC, Doctrine, Composer, Twig
 * refactoring van contact formulier
