@@ -1,0 +1,2416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>PHP presentatie</title>
+
+  <meta name="viewport" content="width=device-width"/>
+
+  <link rel="stylesheet" href="./css/reset.css" type="text/css"/>
+  <link rel="stylesheet" href="./css/showoff.css" type="text/css"/>
+
+  <link type="text/css" href="./css/fg.menu.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/theme/ui.all.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/sh_style.css" rel="stylesheet" />
+
+  <script type="text/javascript" src="./js/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="./js/jquery-print.js"></script>
+  <script type="text/javascript" src="./js/jquery.batchImageLoad.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.doubletap-0.1.js"></script>
+
+  <script type="text/javascript" src="./js/fg.menu.js"></script>
+  <script type="text/javascript" src="./js/showoff.js"></script>
+  <script type="text/javascript" src="./js/jTypeWriter.js"> </script>
+  <script type="text/javascript" src="./js/sh_main.min.js"></script>
+  <script type="text/javascript" src="./js/core.js"></script>
+  <script type="text/javascript" src="./js/showoffcore.js"></script>
+  <script type="text/javascript" src="./js/coffee-script.js"></script>
+
+  
+    
+      <script type="text/javascript" src="./js/sh_lang/sh_php.min.js"></script>
+    
+      <script type="text/javascript" src="./js/sh_lang/sh_xorg.min.js"></script>
+    
+      <script type="text/javascript" src="./js/sh_lang/sh_javascript.min.js"></script>
+    
+      <script type="text/javascript" src="./js/sh_lang/sh_sh.min.js"></script>
+    
+      <script type="text/javascript" src="./js/sh_lang/sh_json.min.js"></script>
+    
+      <script type="text/javascript" src="./js/sh_lang/sh_html.min.js"></script>
+    
+  
+
+  
+    <link rel="stylesheet" href="./file/style.css" type="text/css"/>
+  
+
+  
+    <script type="text/javascript" src="./file/cufon.min.js"></script>
+  
+    <script type="text/javascript" src="./file/Museo_400.font.js"></script>
+  
+    <script type="text/javascript" src="./file/scripts.js"></script>
+  
+
+  <script type="text/javascript">
+  $(function(){
+      setupPreso(false, './');
+  });
+  </script>
+
+</head>
+
+<body>
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu"><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"></div>
+
+<div id="help">
+  <table>
+    <tr><td class="key">z, ?</td><td>toggle help (this)</td></tr>
+    <tr><td class="key">space, &rarr;</td><td>next slide</td></tr>
+    <tr><td class="key">shift-space, &larr;</td><td>previous slide</td></tr>
+    <tr><td class="key">d</td><td>toggle debug mode</td></tr>
+    <tr><td class="key">## &lt;ret&gt;</td><td>go to slide #</td></tr>
+    <tr><td class="key">c, t</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+    <tr><td class="key">r</td><td>reload slides</td></tr>
+    <tr><td class="key">n</td><td>toggle notes</td></tr>
+    <tr><td class="key">p</td><td>run preshow</td></tr>
+    <tr><td class="key">P</td><td>toggle pause</td></tr>
+  </table>
+</div>
+
+<div class="buttonNav">
+  <input type="submit" onClick="prevStep();" value="prev"/>
+  <input type="submit" onClick="nextStep();" value="next"/>
+</div>
+
+<div id="preso">loading presentation...</div>
+<div id="footer">
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+  <span id="notesInfo"></span>
+</div>
+
+<div id="slides" class="offscreen" style="display:none;">
+<div class="slide" data-transition="none"><div class="content center cover" ref="introduction/01_slide/1">
+<h1>PHP best practices</h1>
+
+<h2>Head Office - 22 &amp; 23 mei 2013</h2>
+
+<h3>Joeri Verdeyen</h3>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center cover" ref="introduction/01_slide/2">
+<h1>even kort over mezelf</h1>
+
+<p><img src="./file/introduction/../img/background-biker.jpg" alt="background"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="introduction/01_slide/3">
+<h1>Joeri Verdeyen</h1>
+
+<ul>
+<li>PHP ontwikkelaar (+8 jaar)</li>
+<li>Symfony2 fan</li>
+<li>clean code freak</li>
+<li>mountainbiker/wielertoerist</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="introduction/01_slide/4">
+<h1>contact</h1>
+
+<ul>
+<li>info@jverdeyen.be</li>
+<li>github.com/jverdeyen</li>
+<li>twitter: @jverdeyen</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center cover" ref="introduction/01_slide/5">
+<h1>op de agenda?</h1>
+
+<p><img src="./file/introduction/../img/background-classroom.jpg" alt="background"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content incremental" ref="introduction/01_slide/6">
+<h1>op de agenda?</h1>
+
+<ul>
+<li>algemene programming best practices</li>
+<li>PHP best practices</li>
+<li>MVC, Doctrine, Composer, Twig</li>
+<li>refactoring van contact formulier</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center cover" ref="best-practices-general/01_version-control/1">
+<h1>version control</h1>
+
+<p><img src="./file/best-practices-general/../img/background-source-control.png" alt="background"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices-general/01_version-control/2">
+<h1>problemen opgelost door version control</h1>
+
+<ul>
+<li>wie</li>
+<li>wat</li>
+<li>waar</li>
+<li>wanneer</li>
+<li>waarom</li>
+<li>hoe</li>
+<li>laatste versie</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices-general/01_version-control/3">
+<h1>soorten version control</h1>
+
+<ul>
+<li>non-distributed (centralized)</li>
+<li>distributed</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="best-practices-general/01_version-control/4">
+<h1>centralized version control</h1>
+
+<p><img src="./file/best-practices-general/../img/cvc.png" alt="distributed"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices-general/01_version-control/5">
+<h1>centralized version control</h1>
+
+<h2>werkwijze</h2>
+
+<ul>
+<li>centrale server</li>
+<li>single point of failure</li>
+<li>eerder traag</li>
+<li>ongevraagde wijzigingen -&gt; build fail voor iedereen</li>
+<li>braching/mergen is vaak moeilijk</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="best-practices-general/01_version-control/6">
+<h1>distributed version control</h1>
+
+<p><img src="./file/best-practices-general/../img/dvc.png" alt="distributed"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices-general/01_version-control/7">
+<h1>distributed version control</h1>
+
+<h2>werkwijze</h2>
+
+<ul>
+<li>developers werken lokaal, commits</li>
+<li>snel</li>
+<li>offline</li>
+<li>branching/mergen gaat makkelijk</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices-general/01_version-control/8">
+<h1>diverse oplossingen</h1>
+
+<ul>
+<li>git (voorkeur)</li>
+<li>mercurial</li>
+<li>svn</li>
+<li>arch</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="best-practices-general/01_version-control/9">
+<h1>git</h1>
+
+<p><img src="./file/best-practices-general/../img/git-log-default-output.png" alt="git-log"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices-general/01_version-control/10">
+<h1>gitlab</h1>
+
+<p>git management software voor projecten</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="best-practices-general/01_version-control/11">
+<p><img src="./file/best-practices-general/../img/gitlab/commits.png" alt="commits"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center cover" ref="best-practices-general/01_version-control/12">
+<p><img src="./file/best-practices-general/../img/gitlab/network.png" alt="network"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center cover" ref="best-practices-general/02_documentation/1">
+<h1>documentatie</h1>
+
+<p><img src="./file/best-practices-general/../img/background-documentation.jpg" alt="background"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices-general/02_documentation/2">
+<h1>wanneer <strong>GEEN</strong> commentaar schrijven</h1>
+
+<p>nutteloze commentaar</p>
+
+<pre class="sh_php"><code>// find the needle in a heap
+public function findNeedleInHeap(Needle $needle, Heap $heap) { .. }
+
+// print the given name
+public function printName($name) { .. }
+
+/**
+ * Get the bank account
+ */
+ public function getBankAccount() { .. }</code></pre>
+
+<p class="notes">commentaar is waardeloos, functie is overduidelijk</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices-general/02_documentation/3">
+<h1>wanneer <strong>GEEN</strong> commentaar schrijven</h1>
+
+<p>slechte functie benaming</p>
+
+<pre class="sh_php"><code>// Remove items from the Reply as stated in the Request
+// this can be, the number of items returned, total byte size, etc..
+public function cleanReply(Request $request, Reply $reply) { .. }
+
+// Make sure 'reply' meets the count/byte/etc. limits from the request
+public function enforceLimitsFromRequest(Request $requst, Reply $reply) { .. }</code></pre>
+
+<p class="notes">wat betekend clean? wat wordt er gecleaned?</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices-general/02_documentation/4">
+<h1>wanneer WEL commentaar schrijven</h1>
+
+<p>manier van denken</p>
+
+<pre class="sh_php"><code>// This class is getting messy. Maybe we should create a seperate 'Address' class
+
+// Looping over these objects seems much faster than using array_map
+
+// Looks weird, but this is the best solution, see: [link to stackoverflow]</code></pre>
+
+<p class="notes">niet iedereen ziet meteen waarom een keuze gemaakt is</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices-general/02_documentation/5">
+<h1>wanneer WEL commentaar schrijven</h1>
+
+<p>gebreken in code</p>
+
+<pre class="sh_php"><code>// TODO: use a faster algorithm
+
+// TODO(joeri): this should also handle other image formats besides JPEG</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices-general/02_documentation/6">
+<h1>wanneer WEL commentaar schrijven</h1>
+
+<p>gebreken in code</p>
+
+<ul>
+<li>TODO: wat nog gedaan moet worden</li>
+<li>FIXME: defecte code</li>
+<li>HACK: toegeving onbevallige oplossing voor probleem</li>
+<li>XXX: gevaar! ernstig probleem hier</li>
+</ul>
+
+<p class="notes">handig om project search te doen</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices-general/02_documentation/7">
+<h1>wanneer WEL commentaar schrijven</h1>
+
+<p>constanten</p>
+
+<pre class="sh_php"><code>const IMAGE_QUALITY = 0.72; // gave the best size/quality tradeoff
+
+const MAX_NUM_THREADS = 8; // should be &gt;= (2 * number of processors)
+
+const MAX_IMAGE_SIZE_KB = 500;</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices-general/02_documentation/8">
+<h1>wanneer WEL commentaar schrijven</h1>
+
+<p>samenvatten</p>
+
+<pre class="sh_php"><code>// zoek alle item die de klant zelf aangekocht heeft
+for ( .. ) {
+    for ( .. ) {
+        for ( .. ) {
+            ..
+        }
+    }
+}</code></pre>
+
+<p class="notes">opmerking: 3 nested for loops zijn evil</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices-general/02_documentation/9">
+<h1>samenvatting</h1>
+
+<ul>
+<li>manier van denken uit leggen</li>
+<li>gebreken in code</li>
+<li>constanten</li>
+<li>samenvatten</li>
+<li>onduidelijke code</li>
+<li>uitzonderlijke beslissingen</li>
+<li>algemeen doel van een class</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices-general/02_documentation/10">
+<h1>hulpmiddelen</h1>
+
+<p>DocBlock (vgl. Javadoc)</p>
+
+<pre class="sh_php"><code> /**
+  * This is the short description for a DocBlock.
+  *
+  * This is the long description for a DocBlock. This text may contain
+  * multiple lines and even some _markdown_.
+  *
+  * * Markdown style lists function too
+  * * Just try this out once
+  *
+  * The section after the long description contains the tags; which provide
+  * structured meta-data concerning the given element.
+  *
+  * @author  Joeri Verdeyen &lt;info@jverdeyen.be&gt;
+  *
+  * @since 1.0
+  *
+  * @param int    $example  This is an example function/method parameter description.
+  * @param string $example2 This is a second example.
+  */</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices-general/02_documentation/11">
+<h1>hulpmiddelen</h1>
+
+<ul>
+<li>phpDocumentor</li>
+<li>phpdox</li>
+<li>DocBook (End User)</li>
+</ul>
+
+<p class="notes">DocBook: hoe de code gebruiken, andere: wat code doet</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="best-practices-general/02_documentation/12">
+<h1>phpDocumentor</h1>
+
+<p><img src="./file/best-practices-general/../img/phpdoc1.png" alt="phpdoc"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center cover" ref="best-practices-general/03_code-styling/1">
+<h1>coding standards and conventies</h1>
+
+<p><img src="./file/best-practices-general/../img/background-code-styling.jpg" alt="background"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices-general/03_code-styling/2">
+<h1>waarom?</h1>
+
+<ul>
+<li>focus op code, niet op formattering</li>
+<li>consistentie</li>
+<li>leesbaarheid</li>
+<li>betere samenwerking</li>
+<li>onderhoud</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices-general/03_code-styling/3">
+<h1>wat?</h1>
+
+<ul>
+<li>naamconventies (file, class, variable)</li>
+<li>codeopmaak</li>
+<li>richtlijnen voor consistentie in de code</li>
+<li>gelijkmatigheid</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices-general/03_code-styling/4">
+<h1>ga zelf geen standard uitvinden</h1>
+
+<ul>
+<li>gebruik een bestaande, keuze genoeg
+
+<ul>
+<li>outsourcing</li>
+<li>externe vs. interne standard</li>
+<li>libraries</li>
+</ul></li>
+<li>blijf bij je keuze</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices-general/03_code-styling/5">
+<p>PHP-FIG</p>
+
+<p><img src="./file/best-practices-general/../img/php-fig.org.png" alt="php-fig"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices-general/03_code-styling/6">
+<h1>PHP-FIG</h1>
+
+<p>PSR: "PHP Standards Recommendation"</p>
+
+<ul>
+<li>PSR-0: autoloading standard</li>
+<li>PSR-1: basic coding standard</li>
+<li>PSR-2: coding style standard</li>
+<li>PSR-3: logger interface</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="best-practices-general/03_code-styling/7">
+<p>PSR-2
+<img src="./file/best-practices-general/../img/PSR-2.png" alt="php-fig"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="best-practices-general/03_code-styling/8">
+<h1>handige tools</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="best-practices-general/03_code-styling/9">
+<h2>PHP CodeSniffer</h2>
+
+<p>detecteer inbreuk tegen specifieke standard</p>
+
+<p><img src="./file/best-practices-general/../img/phpcs.png" alt="phpcs"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="best-practices-general/03_code-styling/10">
+<h2>PHP-CS-Fixer</h2>
+
+<p>fix inbreuk tegen specifieke standard</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="best-practices-general/03_code-styling/11">
+<h2>PHP Mess Detector</h2>
+
+<p>detecteer mogelijke problemen, ongebruikte code</p>
+
+<p><img src="./file/best-practices-general/../img/phpmd.png" alt="phpcs"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center cover" ref="best-practices-general/04_testing/1">
+<h1>testing</h1>
+
+<p><img src="./file/best-practices-general/../img/background-testing.jpg" alt="background"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices-general/04_testing/2">
+<h1>testing</h1>
+
+<ul>
+<li>niet geteste code is breekbaar</li>
+<li>ipv debuggen in de browser (var_dump)</li>
+<li>belangrijkste aspecten testen</li>
+<li>phpunit, meest gebruikte testing framework</li>
+</ul>
+
+<p class="notes">klein voorbeeldje tonen</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="best-practices-general/04_testing/3">
+<h1>PHPUnit</h1>
+
+<p>meeste gebruikte testing framework</p>
+
+<p><img src="./file/best-practices-general/../img/phpunit.png" alt="phpunit"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="best-practices-general/04_testing/4">
+<h1>Test Driven Development (TDD)</h1>
+
+<p><img src="./file/best-practices-general/../img/tdd_flow.gif" alt="tdd"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices-general/04_testing/5">
+<h1>Test Driven Development (TDD)</h1>
+
+<ul>
+<li>schrijf eerst je tests</li>
+<li>laat de tests falen</li>
+<li>schrijf code tot tests slagen</li>
+<li>refactor code en herhaal</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center cover" ref="best-practices-general/06_deployments/1">
+<h1>deployment</h1>
+
+<p><img src="./file/best-practices-general/../img/background-deployments.jpg" alt="background"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices-general/06_deployments/2">
+<h1>deployment</h1>
+
+<ul>
+<li>code naar productie</li>
+<li>steeds dezelfde acties automatiseren</li>
+<li>one click -&gt; code live</li>
+<li>rollback</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices-general/06_deployments/3">
+<h1>deployment tips</h1>
+
+<ul>
+<li>bewerk nooit op de live server</li>
+<li>deploy met repostory tags (bv tag 1.0)</li>
+<li>gebruik een staging environment</li>
+<li>vaste procedure voor releases</li>
+</ul>
+
+<p class="notes">altijd 1 versie op meerdere servers, weet welke versie live staat, apc opcode</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="best-practices-general/06_deployments/4">
+<h1>deploy tools</h1>
+
+<p>Webistrano
+<img src="./file/best-practices-general/../img/webistrano.png" alt="phpunit"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices-general/06_deployments/5">
+<h1>deploy tools</h1>
+
+<ul>
+<li>Capistrano</li>
+<li>Phing</li>
+<li>chiefphp</li>
+<li>git</li>
+<li>rsync</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center cover" ref="best-practices/01_intro">
+<h1>PHP best practices</h1>
+
+<p><img src="./file/best-practices/../img/learn.jpg" alt="background"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center cover" ref="best-practices/02_utf8/1">
+<h1>PHP en UTF-8</h1>
+
+<p><img src="./file/best-practices/../img/background-utf8.jpg" alt="background"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="best-practices/02_utf8/2">
+<p>conclusie</p>
+
+<h1>UTF-8 in PHP sucks!</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/02_utf8/3">
+<h1>waarom?</h1>
+
+<ul>
+<li>geen low-level support voor Unicode in PHP</li>
+<li>opletten van SQL tot HTML</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/02_utf8/4">
+<h1>waarom ?</h1>
+
+<p>multibyte string functies</p>
+
+<pre class="sh_php"><code>mb_strlen() vs. strlen()
+mb_substr() vs. substr()
+..</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/02_utf8/5">
+<h1>tip</h1>
+
+<p>bovenaan php file</p>
+
+<pre class="sh_php"><code>// Set internal character encoding to UTF-8
+mb_internal_encoding("UTF-8");
+
+// Display current internal character encoding
+echo mb_internal_encoding();</code></pre>
+
+<p>vlak voor output</p>
+
+<pre class="sh_php"><code>// Tell PHP that we output UTF-8 to broweser
+mb_http_output("UTF-8");</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center cover" ref="best-practices/03_datetime/1">
+<h1>DateTime</h1>
+
+<p><img src="./file/best-practices/../img/background-datetime.jpg" alt="background"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/03_datetime/2">
+<h1>vroeger</h1>
+
+<pre class="sh_php"><code>date();
+gmdate();
+date_timezone_set();
+strtotime();</code></pre>
+
+<h1>nu</h1>
+
+<pre class="sh_php"><code>$date = new DateTime('yesterday');
+$date-&gt;format('Ymd');
+$date-&gt;setTimeZone(new DateTimeZone('Europe/Brussels'));</code></pre>
+
+<p class="notes">Coordinated Universal Time (UTC) is the primary time standard by which the world regulates clocks and time</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/03_datetime/3">
+<h1>DateTime vergelijken</h1>
+
+<pre class="sh_php"><code>$date = new DateTime('yesterday');
+
+$later = new DateTime('2012-05-20', new DateTimeZone('UTC'));
+
+if ($date &gt; $later) { .. }
+
+$difference = $date-&gt;diff($later);
+
+echo $difference['days'];</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center cover" ref="best-practices/04_passwords/1">
+<h1>passwords</h1>
+
+<p><img src="./file/best-practices/../img/background-passwords.jpg" alt="background"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/04_passwords/2">
+<h1>passwords</h1>
+
+<ul>
+<li>nooit plain text password opslaan!</li>
+<li>eigen hash algorithm</li>
+<li>niet alleen md5 of sha1</li>
+<li>salt indien nodig</li>
+<li>phppass (library)</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/04_passwords/3">
+<h1>eigen hash algorithm</h1>
+
+<pre class="sh_php"><code>$salt = '_^jh?NF(~/pKp,]1UH;)d2NQc/h&lt;|go@nf|;fxze+Q-l~Wb_+./?F2/+S1[;SN_`';
+
+$password = 'test';
+
+$storePassword = crypt($password, $salt);</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/04_passwords/4">
+<h1>phppass</h1>
+
+<pre class="sh_php"><code>// Include the phpass library
+require_once('phpass-0.3/PasswordHash.php');
+
+// Initialize the hasher
+$hasher = new PasswordHash(8, false);
+
+// Hash the password
+$hashedPassword = $hasher-&gt;HashPassword('my super cool password');
+
+// compare
+$hasher-&gt;CheckPassword('the wrong password', $hashedPassword); // false
+
+$hasher-&gt;CheckPassword('my super cool password', $hashedPassword); // true</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center cover" ref="best-practices/05_tags/1">
+<p><img src="./file/best-practices/../img/background-tags.jpg" alt="background"/>
+
+<h1>PHP tags</h1>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/05_tags/2">
+<h1>PHP tags</h1>
+
+<pre class="sh_php"><code>&lt;?php ?&gt;
+&lt;?= ?&gt;
+&lt;? ?&gt;
+&lt;% %&gt;</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/05_tags/3">
+<h1>PHP tags</h1>
+
+<ul>
+<li>gebruik &lt;?php ?&gt;</li>
+<li>werkt op alle servers</li>
+<li>enkel php file, geen ?&gt;</li>
+</ul>
+
+<p class="notes">headers already sent, foutieve interpretatie geeft code bloot</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center cover" ref="best-practices/06_quotes/1">
+<h1>single vs. double quotes</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/06_quotes/2">
+<h1>enkele vs. dubbele aanhalingstekens</h1>
+
+<p>enkele worden niet geparsed</p>
+
+<pre class="sh_php"><code>$name = 'dave';
+$string = 'hallo $name, \n hoe gaat ie?';
+
+// hallo $name, \n hoe gaat ie?</code></pre>
+
+<p>dubbele worden geparsed voor PHP variables</p>
+
+<pre class="sh_php"><code> $name = 'dave';
+ $string = "hallo $var, \n hoe gaat ie?";
+
+ // hallo dave,
+ // hoe gaat ie?</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/06_quotes/3">
+<h1>enkele vs. dubbele aanhalingstekens</h1>
+
+<ul>
+<li>snelheid
+
+<ul>
+<li>enkel bij extreme high-load apps</li>
+</ul></li>
+<li>wees consistent</li>
+</ul>
+
+<p>of sprintf</p>
+
+<pre class="sh_php"><code>$name = 'dave';
+$sentence = 'hallo %s, \n hoe gaat ie?'
+$string = sprintf($sentence, $name);
+
+// hallo dave, \n hoe gaat ie?</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center cover" ref="best-practices/07_const/1">
+<p><img src="./file/best-practices/../img/background-const.jpg" alt="background"/>
+
+<h1>define() vs. const</h1>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/07_const/2">
+<h1>define() vs. const</h1>
+
+<h2>namespaces</h2>
+
+<pre class="sh_php"><code>namespace HeadOffice\Presentatie;
+const WORKERS = 100;
+define('HeadOffice\Presentatie\VISITORS', 10);</code></pre>
+
+<h2>expressions</h2>
+
+<pre class="sh_php"><code>const WORKERS = 50 * 2; // compile error
+define('WORKERS', 50 * 2); //</code></pre>
+
+<p class="notes">namespace emuleren</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/07_const/3">
+<h1>define() vs. const</h1>
+
+<h2>blocks</h2>
+
+<pre class="sh_php"><code>if (true === true) {
+    define('MAX_VISITORS', 50); // ok
+    const MAX_VISITORS = 50 ; // compile error
+}</code></pre>
+
+<h2>class</h2>
+
+<pre class="sh_php"><code>class Visitor {
+    const NUMBER_OF_LEGS = 2; // ok
+    define('NUMBER_OF_LEGS', 2); // compile error
+}</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/07_const/4">
+<h1>define()</h1>
+
+<ul>
+<li>run time</li>
+<li>global scope</li>
+<li>expressions (flexibel)</li>
+</ul>
+
+<h1>const</h1>
+
+<ul>
+<li>compile time (minimaal sneller)</li>
+<li>namespace</li>
+<li>global sinds PHP 5.3</li>
+<li>beter leesbaar</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center cover" ref="best-practices/08_mail/1">
+<p><img src="./file/best-practices/../img/background-mail.jpg" alt="background"/>
+
+<h1>mail() vs. Swift Mailer</h1>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/08_mail/2">
+<h1>gebruik Swift Mailer</h1>
+
+<ul>
+<li>niet vatbaar voor header injection</li>
+<li>flexibel (smtp, sendmail, postfix, ..)</li>
+<li>makkelijk MIME compliant HTML/multipart emails</li>
+<li>efficienter bij mass mails</li>
+<li>zowel text/html</li>
+</ul>
+
+<p>of een andere mail library ipv mail()</p>
+
+<p class="notes">Multipurpose Internet Mail Extension (MIME), 1992 IETF (internet engineering task force) , niet text email bijlagen</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/08_mail/3">
+<h1>gebruik Swift Mailer</h1>
+
+<pre class="sh_php"><code>require_once 'lib/swift_required.php';
+
+$message = Swift_Message::newInstance()
+
+  -&gt;setSubject('Your subject')
+
+  -&gt;setFrom(array('john@doe.com' =&gt; 'John Doe'))
+
+  -&gt;setTo(array('receiver@domain.org', 'other@domain.org' =&gt; 'A name'))
+
+  -&gt;setBody('Here is the message itself')
+
+  -&gt;addPart('&lt;q&gt;Here is the message itself&lt;/q&gt;', 'text/html')
+
+  -&gt;attach(Swift_Attachment::fromPath('my-document.pdf'))
+  ;</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/08_mail/4">
+<h1>via mail() .. ramp!</h1>
+
+<pre class="sh_php"><code>//define the receiver of the email
+$to = 'youraddress@example.com';
+//define the subject of the email
+$subject = 'Test email with attachment';
+//create a boundary string. It must be unique
+//so we use the MD5 algorithm to generate a random hash
+$random_hash = md5(date('r', time()));
+//define the headers we want passed. Note that they are separated with \r\n
+$headers = "From: webmaster@example.com\r\nReply-To: webmaster@example.com";
+//add boundary string and mime type specification
+$headers .= "\r\nContent-Type: multipart/mixed; boundary=~~~CONTENT~~~quot;PHP-mixed-".$random_hash."~~~CONTENT~~~quot;";
+//read the atachment file contents into a string,
+//encode it with MIME base64,
+//and split it into smaller chunks
+$attachment = chunk_split(base64_encode(file_get_contents('attachment.zip')));
+//define the body of the message.
+ob_start(); //Turn on output buffering
+?&gt;
+--PHP-mixed-&lt;?php echo $random_hash; ?&gt;
+Content-Type: multipart/alternative; boundary="PHP-alt-&lt;?php echo $random_hash; ?&gt;"
+
+...</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/08_mail/5">
+<h1>MIME?</h1>
+
+<ul>
+<li>tekst in characters sets anders dan ASCII</li>
+<li>niet tekst bijlagen (zip, jpg, ..)</li>
+<li>message bodies in meerdere delen</li>
+<li>header informatie in niet-ASCII character sets</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/08_mail/6">
+<h1>externe services</h1>
+
+<ul>
+<li>mandrill</li>
+<li>sendblaster</li>
+<li>..</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center cover" ref="best-practices/09_null-false/1">
+<p><img src="./file/best-practices/../img/background-null-false.jpg" alt="background"/>
+
+<h1>null and false</h1>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/09_null-false/2">
+<h1>null and false</h1>
+
+<ul>
+<li>PHP is loosely typed</li>
+<li>== (gelijk)</li>
+<li>=== (identiek)</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/09_null-false/3">
+<h1>null and false</h1>
+
+<pre class="sh_php"><code>0 == null   // true ??
+is_null(0)  // false
+0 === null  // false</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/09_null-false/4">
+<h1>strpos</h1>
+
+<pre class="sh_php"><code>if (strpos('abc', 'a')) {
+    echo "gevonden";
+}</code></pre>
+
+<p class="notes">geef 0 terug -&gt; php denkt false</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/09_null-false/5">
+<h1>strpos</h1>
+
+<pre class="sh_php"><code>if (strpos('abc', 'a') !== false) {
+    echo "gevonden";
+}</code></pre>
+
+<p class="notes">expliciet check</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/09_null-false/6">
+<h1>isset</h1>
+
+<p>onbetrouwbaar</p>
+
+<pre class="sh_php"><code>$x = null;
+isset($x); // false
+
+$x = false;
+isset($x); // true
+
+$x = 0;
+isset($x); // true</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/09_null-false/7">
+<h1>0 vs. string</h1>
+
+<pre class="sh_php"><code>0 == ''
+0 == 'string'</code></pre>
+
+<p class="notes">true</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center cover" ref="best-practices/10_in_array/1">
+<p><img src="./file/best-practices/../img/background-in_array.jpg" alt="background"/>
+
+<h1>in_array()</h1>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/10_in_array/2">
+<h1>mysterie in_array()</h1>
+
+<pre class="sh_php"><code>$array = array (
+    'lion' =&gt; true,
+    'rhino' =&gt; true,
+    'tiger' =&gt; false
+);
+
+in_array('tiger', $array); // true</code></pre>
+
+<p class="notes">true, raar, want in_array checked op waarde</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/10_in_array/3">
+<h1>mysterie in_array()</h1>
+
+<pre class="sh_php"><code>$array = array (
+    'lion' =&gt; 1,
+    'rhino' =&gt; 1,
+    'tiger' =&gt; 0
+);
+
+in_array('cat', $array);
+
+'cat' == 0; // true</code></pre>
+
+<p class="notes">standaard checked in_array op loose comparison</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/10_in_array/4">
+<h1>gelijk in PHP, bij ==</h1>
+
+<ul>
+<li>0</li>
+<li>false</li>
+<li>""</li>
+<li>"0"</li>
+<li>NULL of null</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/10_in_array/5">
+<h1>mysterie in_array()</h1>
+
+<p>oplossing, strict vergelijken</p>
+
+<pre class="sh_php"><code>$array = array (
+    'lion' =&gt; 1,
+    'rhino' =&gt; 1,
+    'tiger' =&gt; 0
+);
+
+in_array('cat', $array, true); // false</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center cover" ref="best-practices/11_error_reporting/1">
+<p><img src="./file/best-practices/../img/background-error_reporting.jpg" alt="background"/>
+
+<h1>error_reporting</h1>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/11_error_reporting/2">
+<h1>error_reporting</h1>
+
+<p>production</p>
+
+<pre class="sh_xorg"><code>error_reporting = E_ALL &amp; ~E_NOTICE
+log_errors = On
+display_errors = Off</code></pre>
+
+<p>development</p>
+
+<pre class="sh_xorg"><code>error_reporting = E_ALL &amp; E_STRICT
+log_errors = On
+display_errors = On</code></pre>
+
+<p class="notes">E_STRICT deprecated functions zien, notices voor dev</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center cover" ref="best-practices/12_pdo/1">
+<h1>PDO (PHP Data Objects)</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/12_pdo/2">
+<h1>wat is PDO</h1>
+
+<ul>
+<li>interface voor interactie met database</li>
+<li>verschillende type databases</li>
+<li>schrijft geen sql (geen database abstraction layer)</li>
+<li>sinds PHP 5.1 native</li>
+<li>ipv mysql of mysqli extensie</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/12_pdo/3">
+<h1>verschillende drivers</h1>
+
+<pre class="sh_php"><code>print_r(PDO::getAvailableDrivers());</code></pre>
+
+<ul>
+<li>PDO_DBLIB ( FreeTDS / Microsoft SQL Server / Sybase )</li>
+<li>PDO_FIREBIRD ( Firebird/Interbase 6 )</li>
+<li>PDO_MYSQL ( MySQL 3.x/4.x/5.x )</li>
+<li>PDO_OCI ( Oracle Call Interface )</li>
+<li>PDO_PGSQL ( PostgreSQL )</li>
+<li>PDO_SQLITE ( SQLite 3 and SQLite 2 )</li>
+<li>PDO_4D ( 4D )</li>
+<li>..</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/12_pdo/4">
+<h1>connectie via string</h1>
+
+<pre class="sh_php"><code>try {
+    $connection = new PDO(
+        "mysql:host=$host;dbname=$dbname",
+        $user,
+        $pass
+    );
+}
+catch (PDOException $e) {
+    echo $e-&gt;getMessage();
+}
+
+// connectie afsluiten
+$connection = null;</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/12_pdo/5">
+<h1>insert en update via statements</h1>
+
+<pre class="sh_php"><code>$stmt = $connection-&gt;prepare(
+    "INSERT INTO visitor (name) VALUES ('dave')"
+);
+
+$stmt-&gt;execute();</code></pre>
+
+<p>of</p>
+
+<pre class="sh_php"><code>$connection-&gt;exec(
+    "INSERT INTO visitor (name) VALUES ('dave')"
+);</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/12_pdo/6">
+<h1>prepared statements</h1>
+
+<ul>
+<li>precompiled SQL statement</li>
+<li>veilig voor SQL injection</li>
+<li>met/zonder (named/unnamed) placeholders</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/12_pdo/7">
+<h1>prepared statements</h1>
+
+<p>geen placeholders</p>
+
+<pre class="sh_php"><code>// kwetsbaar voor SQL injection
+-&gt;prepare("INSERT INTO visitor (name) VALUES ($name)");</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/12_pdo/8">
+<h1>prepared statements</h1>
+
+<p>unnamed placeholders</p>
+
+<pre class="sh_php"><code>$stmt = $db-&gt;prepare("INSERT INTO visitor (name, street) VALUES (?, ?)");
+$stmt-&gt;bindParam(1, $name);
+$stmt-&gt;bindParam(2, $street);
+$stmt-&gt;execute();</code></pre>
+
+<p>of</p>
+
+<pre class="sh_php"><code>$data = array('dave', 'jumpstreet');
+
+$stmt = $db-&gt;prepare("INSERT INTO visitor (name, street) VALUES (?, ?)");
+$stmt-&gt;execute($data);</code></pre>
+
+<p class="notes">$data[0] moet juiste indexen hebben</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/12_pdo/9">
+<h1>prepared statements</h1>
+
+<p>named placeholders</p>
+
+<pre class="sh_php"><code>$stmt = $db-&gt;prepare("INSERT INTO visitor (name, street) VALUES (:name, :street)");
+$stmt-&gt;bindParam(':name', $name);
+$stmt-&gt;bindParam(':street', $street);
+$stmt-&gt;execute();</code></pre>
+
+<p>of</p>
+
+<pre class="sh_php"><code>$data = array(
+    'name'  =&gt; 'dave',
+    'street' =&gt; 'jumpstreet
+');
+
+$stmt = $db-&gt;prepare(
+    "INSERT INTO visitor (name, street) VALUES (:name, :street)"
+);
+$stmt-&gt;execute($data);</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/12_pdo/10">
+<h1>prepared statements</h1>
+
+<p>objecten</p>
+
+<pre class="sh_php"><code>class Person {
+    public $name;
+    public $street;
+
+    function __construct($name, $street) { .. }
+}
+
+$dave = new Person('dave', 'jumpstreet');
+
+$stmt = $db-&gt;prepare(
+    "INSERT INTO visitor (name, street) VALUES (:name, :street)"
+);
+
+$stmt-&gt;execute((array) $dave);</code></pre>
+
+<p class="notes">cast naar array maakt er assoc array van</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/12_pdo/11">
+<h1>fetch</h1>
+
+<p>verschillende opties</p>
+
+<ul>
+<li>PDO::FETCH_ASSOC: assoc array (kolom naam)</li>
+<li>PDO::FETCH_OBJ: in nieuwe object</li>
+<li>PDO::FETCH_CLASS: in bestaand object</li>
+<li>PDO::FETCH_BOTH (standaard)</li>
+<li>..</li>
+</ul>
+
+<p>instellen</p>
+
+<pre class="sh_php"><code>$stmt-&gt;setFetchMode(PDO::FETCH_ASSOC);
+$stmt-&gt;fetch(PDO::FETCH_OBJ);</code></pre>
+
+<p class="notes">bound: bindColumn (namen van kolommen aanpassen), class (matched met members), into: bestaande class</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/12_pdo/12">
+<h1>handig</h1>
+
+<p>auto incremented id van laatste insert</p>
+
+<pre class="sh_php"><code>$stmt-&gt;lastInsertId();</code></pre>
+
+<p>prepared statements fallback</p>
+
+<pre class="sh_php"><code>$stmt-&gt;quote($unsafeString);</code></pre>
+
+<p>aantal rijen</p>
+
+<pre class="sh_php"><code>$stmt-&gt;rowCount();</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center cover" ref="best-practices/13_email_validation/1">
+<h1>email validatie</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/13_email_validation/2">
+<h1>reguliere expressie</h1>
+
+<pre class="sh_php"><code>if (
+    preg_match("/^(?!(?:(?:\x22?\x5C[\x00-\x7E]\x22?)|
+    (?:\x22?[^\x5C\x22]\x22?)){255,})(?!(?:(?:\x22?\x5C
+    [\x00-\x7E]\x22?)|(?:\x22?[^\x5C\x22]\x22?)){65,}@)
+    (?:(?:[\x21\x23-\x27\x2A\x2B\x2D\x2F-\x39\x3D\x3F\
+    x5E-\x7E]+)|(?:\x22(?:[\x01-\x08\x0B\x0C\x0E-\x1F\
+    x21\x23-\x5B\x5D-\x7F]|(?:\x5C[\x00-\x7F]))*\x22))
+    (?:\.(?:(?:[\x21\x23-\x27\x2A\x2B\x2D\x2F-\x39\x3D
+    \x3F\x5E-\x7E]+)|(?:\x22(?:[\x01-\x08\x0B\x0C\x0E-
+    \x1F\x21\x23-\x5B\x5D-\x7F]|(?:\x5C[\x00-\x7F]))*
+    \x22)))*@(?:(?:(?!.*[^.]{64,})(?:(?:(?:xn--)?[a-z0-9]+
+    (?:-[a-z0-9]+)*\.){1,126}){1,}(?:(?:[a-z][a-z0-9]*)|
+    (?:(?:xn--)[a-z0-9]+))(?:-[a-z0-9]+)*)|(?:\[
+    (?:(?:IPv6:(?:(?:[a-f0-9]{1,4}(?::[a-f0-9]{1,4}){7})
+    |(?:(?!(?:.*[a-f0-9][:\]]){7,})(?:[a-f0-9]{1,4}(?::
+    [a-f0-9]{1,4}){0,5})?::(?:[a-f0-9]{1,4}(?::[a-f0-9]
+    {1,4}){0,5})?)))|(?:(?:IPv6:(?:(?:[a-f0-9]{1,4}(?::
+    [a-f0-9]{1,4}){5}:)|(?:(?!(?:.*[a-f0-9]:){5,})
+    (?:[a-f0-9]{1,4}(?::[a-f0-9]{1,4}){0,3})?::
+    (?:[a-f0-9]{1,4}(?::[a-f0-9]{1,4}){0,3}:)?)))?
+    (?:(?:25[0-5])|(?:2[0-4][0-9])|(?:1[0-9]{2})|(?:[1-9]
+    ?[0-9]))(?:\.(?:(?:25[0-5])|(?:2[0-4][0-9])|
+    (?:1[0-9]{2})|(?:[1-9]?[0-9]))){3}))\]))$/iD",
+
+    strtolower($mail_address))) { .. }</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/13_email_validation/3">
+<h1>filter_var()</h1>
+
+<pre class="sh_php"><code>filter_var('info@jverdeyen.be', FILTER_VALIDATE_EMAIL);</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/13_email_validation/4">
+<p>nog veel meer filters</p>
+
+<ul>
+<li>FILTER<em>VALIDATE</em>BOOLEAN</li>
+<li>FILTER<em>VALIDATE</em>FLOAT</li>
+<li>FILTER<em>VALIDATE</em>INT</li>
+<li>FILTER<em>VALIDATE</em>IP</li>
+<li>FILTER<em>VALIDATE</em>URL</li>
+<li>..</li>
+<li>+ sanitize filters</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/13_email_validation/5">
+<h1>email validatie (extra)</h1>
+
+<p>check mailserver</p>
+
+<pre class="sh_php"><code>private function fConnect(){
+    $fp             = @fsockopen($this-&gt;mxhost, 25, $errno, $errstr, 5);
+    $ms_resp        = "";
+    $b_server_found = false;
+    if($fp){
+        $ms_resp .= $this-&gt;send_command($fp, "HELO hi");
+        $ms_resp .= $this-&gt;send_command($fp, "MAIL FROM:&lt;joeri@jverdeyen.be&gt;");
+        $rcpt_text = $this-&gt;send_command($fp, "RCPT TO:&lt;{$this-&gt;email}&gt;");
+        $ms_resp .= $rcpt_text;
+        if(substr($rcpt_text, 0, 3) == "250"){
+            $b_server_found = true;
+        }
+        $ms_resp .= $this-&gt;send_command($fp, "QUIT");
+        fclose($fp);
+    }
+    return $b_server_found;
+}</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/13_email_validation/6">
+<h1>email validatie (extra)</h1>
+
+<p>check MX record</p>
+
+<pre class="sh_php"><code>private function getMXHost(){
+    list($user, $domain) = explode("@", $this-&gt;email);
+    getmxrr($domain, $hosts, $weights);
+    $priority = mt_getrandmax();
+    $key      = 0;
+    if(empty($weights)){
+        return false;
+    }
+    foreach($weights as $k =&gt; $v){
+        if($v &lt; $priority){
+            $key      = $k;
+            $priority = $v;
+        }
+    }
+    return $hosts[$key];
+}</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center cover" ref="best-practices/14_autoloading/1">
+<h1>autoloading</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/14_autoloading/2">
+<h1>autoloading</h1>
+
+<pre class="sh_php"><code>require 'Visitor.php';
+$visitor = new Visitor('dave', 'street');</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/14_autoloading/3">
+<h1>autoloading in PHP 5</h1>
+
+<p>autoloading in the "Olden days"</p>
+
+<pre class="sh_php"><code>function __autoload($className) {
+    $filename = $className . ".php";
+
+    if (is_readable($filename)) {
+        require $filename;
+    }
+}</code></pre>
+
+<p>max. 1 functie!</p>
+
+<p class="notes">file_exists kijkt niet naar permissies</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/14_autoloading/4">
+<h1>autoloading sinds PHP 5.1.2</h1>
+
+<pre class="sh_php"><code>function autoloadService($className) {
+    $filename = "services/". $className . ".php";
+
+    if (is_readable($filename)) {
+        require $filename;
+    }
+}
+
+function autoloadController($className) {
+    $filename = "controllers/". $className . ".php";
+
+    if (is_readable($filename)) {
+        require $filename;
+    }
+}
+
+spl_autoload_register("autoloadService");
+spl_autoload_register("autoloadController");</code></pre>
+
+<p class="notes">overschijft __autoload()</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/14_autoloading/5">
+<h1>autoloading standards</h1>
+
+<p>PEAR Coding Standard (voor namespaces)</p>
+
+<p>bestand</p>
+
+<pre class="sh_php"><code>class Zend_Translate</code></pre>
+
+<p>locatie</p>
+
+<pre class="sh_php"><code>Zend/Translate.php</code></pre>
+
+<p>iedereen eigen implementatie</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/14_autoloading/6">
+<h1>autoloading standards</h1>
+
+<p>PSR-0 Standard (na 5.3)</p>
+
+<pre class="sh_php"><code>&lt;?php
+namespace Vendor\Package\Service;
+
+class Example
+{
+
+}</code></pre>
+
+<p>locatie</p>
+
+<pre class="sh_php"><code>Vendor/Package/Service/Example.php</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center cover" ref="best-practices/15_sanitize_html/1">
+<h1>data validation en sanitization</h1>
+
+<p><img src="./file/best-practices/../img/background-sanitize_html.jpg" alt="background"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/15_sanitize_html/2">
+<h1>golden rule</h1>
+
+<ul>
+<li>vertrouw NOOIT gebruikers input</li>
+<li>validate/sanitize alle user input en escape output</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/15_sanitize_html/3">
+<h1>data validation</h1>
+
+<ul>
+<li>alleen opslaan wat we willen opslaan</li>
+<li>accept/reject</li>
+</ul>
+
+<h1>data sanitization</h1>
+
+<ul>
+<li>data onschadelijk voor opslaan of tonen</li>
+<li>strip/encode</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/15_sanitize_html/4">
+<h1>waarom?</h1>
+
+<p>sql injection, XSS (Cross-site Scripting)</p>
+
+<pre class="sh_javascript"><code>alert('hacked');
+alert(document.cookie);</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/15_sanitize_html/5">
+<h1>waarom?</h1>
+
+<ul>
+<li>kan alle output omzeep helpen
+
+<ul>
+<li>bv. single en double quote</li>
+</ul></li>
+<li>malware</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/15_sanitize_html/6">
+<h1>sanitize html, input en output</h1>
+
+<ul>
+<li>htmlentities()
+
+<ul>
+<li>niet strip_tags() (dumb)</li>
+<li>niet filter_var() (line breaks)</li>
+</ul></li>
+<li>HTML Purifier</li>
+</ul>
+
+<p class="notes">strip<em>tags (dumb, als je &lt;&gt; vergeet), fitler</em>var -&gt; line breaks (ascii, max 32bit)</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/15_sanitize_html/7">
+<h1>sanitize html, input en output</h1>
+
+<ul>
+<li>htmlentities()
+
+<ul>
+<li>simpel</li>
+<li>snel</li>
+<li>geen validatie</li>
+</ul></li>
+<li>HTML Purifier
+
+<ul>
+<li>complex</li>
+<li>traag bij zeer complexe html</li>
+</ul></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/15_sanitize_html/8">
+<h1>sanitize html, input en output</h1>
+
+<p>htmlentities</p>
+
+<pre class="sh_php"><code>// evil html van een formulier
+$evilHtml = '&lt;div onclick="xss();"&gt;Mua-ha-ha!  Twiddling my evil mustache...&lt;/div&gt;';
+
+$safeHtml = htmlentities($evilHtml, ENT_QUOTES, 'UTF-8');</code></pre>
+
+<p class="notes">ENT_QUOTES voor quotes (double/single), force utf-8 (standaard vanaf 5.4), htmlspecialchars -&gt; zet bv &amp; om naar &amp;</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/15_sanitize_html/9">
+<h1>sanitize html, input en output</h1>
+
+<p>HTML Purifier</p>
+
+<pre class="sh_php"><code>require_once('htmlpurifier-4.4.0/HTMLPurifier.auto.php');
+
+$evilHtml = '&lt;div onclick="xss();"&gt;Mua-ha-ha!  Twiddling my evil mustache...&lt;/div&gt;';
+
+$purifier = new HTMLPurifier(HTMLPurifier_Config::createDefault());
+
+$safeHtml = $purifier-&gt;purify($evilHtml);</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center cover" ref="best-practices/16_handy_functions/1">
+<h1>handige functies</h1>
+
+<p><img src="./file/best-practices/../img/background-handy_functions.jpg" alt="background"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/16_handy_functions/2">
+<h1>array_rand</h1>
+
+<pre class="sh_php"><code>$sites = ["Scott", "Trek", "Kona", "Orbea"];
+$k = array_rand($sites);
+$sites[$k];</code></pre>
+
+<p class="notes">2e param bepaald aantal keys</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/16_handy_functions/3">
+<h1>basename</h1>
+
+<pre class="sh_php"><code>$path = '/home/user/site/www/index.php';
+$filename1 = basename($path); // index.php
+$filename2 = basename($path, '.php'); // index</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/16_handy_functions/4">
+<h1>list</h1>
+
+<pre class="sh_php"><code>$array = ["Steve", "Jobs"];
+list($firstName, $lastName) = $array;
+
+echo $firstName; // Steve
+echo $lastName; // Jobs</code></pre>
+
+<p>met explode</p>
+
+<pre class="sh_php"><code>$data = "foo:*:1023:1000::/home/foo:/bin/sh";
+list($user, $pass, $uid, $gid, $gecos, $home, $shell) = explode(":", $data);</code></pre>
+
+<p class="notes">/etc/passwd output</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/16_handy_functions/5">
+<h1>range</h1>
+
+<pre class="sh_php"><code>range(0, 10); // array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+range('a', 'f'); // array('a', 'b', 'c', 'd', 'e'. 'f');
+
+range(2, 10, 2); // array(2, 4, 6, 8, 10);</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/16_handy_functions/6">
+<h1>is_readable</h1>
+
+<pre class="sh_php"><code>$filename = 'test.txt';
+
+if (is_readable($filename)) {
+    echo 'The file is readable';
+} else {
+    echo 'The file is not readable';
+}</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/16_handy_functions/7">
+<h1>uniqid</h1>
+
+<pre class="sh_php"><code>echo md5(time() . mt_rand(1,1000000));
+
+echo uniqid(); // 4bd67c9472340
+
+echo uniqid('foo_',true);  // foo_4bd67d6cd8b8f
+
+echo uniqid('bar_',true);  // bar_4bd67da367b650.43684647</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="best-practices/16_handy_functions/8">
+<h1>gzcompress</h1>
+
+<pre class="sh_php"><code>$veryLongString = "Lorem ipsum dolor sit amet, consectetur adipiscing elit...";
+
+echo strlen($veryLongString); // 800
+
+$compressed = gzcompress($veryLongString);
+
+echo strlen($compressed); // 418
+
+$original = gzuncompress($compressed);</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center cover" ref="framework/01_intro/1">
+<h1>MVC</h1>
+
+<p><img src="./file/framework/../img/background-mvc.jpg" alt="background"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="framework/01_intro/2">
+<h1>design pattern</h1>
+
+<p><img src="./file/framework/../img/mvc.jpg" alt="mvc"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/01_intro/3">
+<h1>design pattern</h1>
+
+<ul>
+<li>een manier om applicaties te maken</li>
+<li>splits logica van presentatie</li>
+<li>loose coupling</li>
+<li>leesbaarheid</li>
+<li>herbruikbaarheid</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/01_intro/4">
+<h1>model (datamodel)</h1>
+
+<ul>
+<li>alle kennis van de applicatie</li>
+<li>data en business functionaliteit</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/01_intro/5">
+<h1>view (datapresentatie)</h1>
+
+<ul>
+<li>gui van de applicatie</li>
+<li>geeft/krijgt informatie van model</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/01_intro/6">
+<h1>controller (applicatielogica)</h1>
+
+<ul>
+<li>link tussen gebruiker en systeem</li>
+<li>render de view</li>
+<li>verwerkt en reageert op events</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/01_intro/7">
+<h1>MVC</h1>
+
+<ul>
+<li>controller kent view en het model</li>
+<li>view kent het model</li>
+<li>model geen weet van views</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center cover" ref="framework/02_doctrine_intro/1">
+<h1>Doctrine</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/02_doctrine_intro/2">
+<h1>Wat is Doctrine</h1>
+
+<p>Doctrine bestaat uit 3 libraries (packages)</p>
+
+<ul>
+<li>DBAL (Database Abstraction Layer)</li>
+<li>ORM (Object Relational Mapper)</li>
+<li>Common</li>
+</ul>
+
+<p>je kan DBAL gebruiken of beide</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/02_doctrine_intro/3">
+<h1>Common package</h1>
+
+<ul>
+<li>gedeelde code tussen DBAL en ORM
+
+<ul>
+<li>cache drivers</li>
+<li>annotations parser</li>
+<li>cli</li>
+<li>class loaders</li>
+<li>..</li>
+</ul></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/03_doctrine_dbal/1">
+<h1>Database Abstraction Layer</h1>
+
+<ul>
+<li>bovenop PDO</li>
+<li>DDL (data definition language) statement api</li>
+<li>lightweight</li>
+<li>veel meer extra features</li>
+<li>verschillende databases
+
+<ul>
+<li>MySQL</li>
+<li>Sqlite</li>
+<li>Pgsql</li>
+<li>..</li>
+</ul></li>
+</ul>
+
+<p class="notes">DDL : taal om datastrucutren te beschrijven, waar pdo enkel voor connectie zorgt</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/03_doctrine_dbal/2">
+<h1>queries uitvoeren</h1>
+
+<pre class="sh_php"><code>$stmt = $conn-&gt;execute('SELECT * FROM user WHERE name = ?', array('joeri'));
+$user = $stmt-&gt;fetch();</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/03_doctrine_dbal/3">
+<h1>schema informatie ophalen (Schema-Manager)</h1>
+
+<pre class="sh_php"><code>$sm = $conn-&gt;getSchemaManager();
+
+$databases = $sm-&gt;listDatabases();
+
+$columns = $sm-&gt;listTableColumns('user');
+
+$foreignKeys = sm-&gt;listTableForeignKeys('user');</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/03_doctrine_dbal/4">
+<h1>schema's aanmaken (Schema-Representation)</h1>
+
+<pre class="sh_php"><code>$platform = $em-&gt;getConnection()-&gt;getDatabasePlatform();
+
+$schema = new \Doctrine\DBAL\Schema\Schema();
+$newTable = $schema-&gt;createTable('user');
+$newTable-&gt;addColumn('id', 'integer', array('unsigned' =&gt; true));
+$newTable-&gt;addColumn('name', 'string', arary('length' =&gt; 32));
+$newTable-&gt;setPrimaryKey(array('id'))
+
+// create table queries
+$queries = $schema-&gt;toSql($platform);
+
+// drop schema
+$dropsSchema = $schema-&gt;toDropSql($platform);</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/03_doctrine_dbal/5">
+<h1>schema's vergelijken</h1>
+
+<pre class="sh_php"><code>$comparator = \Doctrine\DBAL\Schema\Comparator();
+
+$schemaDiff = $comparator-&gt;compare($fromSchema, $toSchema);
+
+// queries om van het ene naar het andere schema te gaan
+$queries = $schemaDiff-&gt;toSql($platform);</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/03_doctrine_dbal/6">
+<h1>schema via annotations (Doctrine ORM)</h1>
+
+<pre class="sh_php"><code>&lt;?php
+
+namespace Entity;
+
+/**
+ * @Entity @Table(name="users")
+ */
+ class User
+ {
+    /** @Id @Column(type="integer") @GeneratedValue */
+    private $id;
+
+    /** @Column(length=50) */
+    private $name;
+
+    /** @OneToOne(targetEntity="Address") */
+    private $address;
+ }</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/03_doctrine_dbal/7">
+<h1>entiteiten opslaan</h1>
+
+<pre class="sh_php"><code>$user = new User();
+$user-&gt;setName('dave');
+
+$em-&gt;persist($user);
+$em-&gt;flush();</code></pre>
+
+<p class="notes">meerdere transacties zijn sneller dan native php, door transacties</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/03_doctrine_dbal/8">
+<h1>insert performance</h1>
+
+<p>insert 20 records met Doctrine</p>
+
+<pre class="sh_php"><code>for ($i = 0; $i &lt; 20; $++) {
+    $user = new User();
+    $user-&gt;setName('dave');
+    $em-&gt;persist($user);
+}
+
+$em-&gt;flush</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/03_doctrine_dbal/9">
+<h1>insert performance</h1>
+
+<p>insert 20 records via raw PHP</p>
+
+<pre class="sh_php"><code>for ($i = 0; $i &lt; 20; $++) {
+    mysql_query("INSERT INTO users (name) VALUES ('dave')", $conn);
+}</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/03_doctrine_dbal/10">
+<h2>insert performance</h2>
+
+<p>Doctrine is sneller! Waarom?</p>
+
+<ul>
+<li>Doctrine: 1 transaction voor geheel</li>
+<li>raw PHP: 1 transaction voor elke insert</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/03_doctrine_dbal/11">
+<h1>insert performance</h1>
+
+<p>wat doet Doctrine:</p>
+
+<pre class="sh_php"><code>mysql_query('START TRANSACTION', $link);
+
+for ($i = 0; $i &lt; 20; $++) {
+    mysql_query("INSERT INTO users (name) VALUES ('dave')", $conn);
+}
+
+mysql_query('COMMIT', $link);</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/04_doctrine_orm/1">
+<h1>Object Relational Mapper</h1>
+
+<ul>
+<li>bovenopen DBAL en Common</li>
+<li>Doctrine Query Language</li>
+<li>XML, YAML of Annotations voor metadata</li>
+<li>query cache</li>
+<li>result cache</li>
+<li>..</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/04_doctrine_orm/2">
+<h1>Doctrine Query Language (DQL)</h1>
+
+<ul>
+<li>queries op modellen</li>
+<li>niet verwarren met relational schema (sql)</li>
+</ul>
+
+<p>voorbeeld dql</p>
+
+<pre class="sh_php"><code>$query = $em-&gt;createQuery('select u from Project\Entity\User u');
+$users = $query-&gt;execute();</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/04_doctrine_orm/3">
+<h1>Doctrine Query Language (DQL)</h1>
+
+<p>via de QueryBuilder API</p>
+
+<pre class="sh_php"><code>$qb = $em-&gt;createQueryBuilder();
+
+$qb-&gt;select('u')
+   -&gt;from('Project\Entity\User', 'u');
+
+$q = $qb-&gt;getQuery();
+$users = $q-&gt;execute();</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/04_doctrine_orm/4">
+<h1>Cache drivers</h1>
+
+<p>interface voor alle cache drivers
+(APC, Memcache, Xcache)</p>
+
+<ul>
+<li>fetch($id)</li>
+<li>contains($id)</li>
+<li>save($id, $data, $lifeTime = false)</li>
+<li>delete($id)</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center cover" ref="framework/05_composer/1">
+<h1>Composer</h1>
+
+<p><img src="./file/framework/../img/background-composer.jpg" alt="background"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/05_composer/2">
+<h1>Composer en PEAR</h1>
+
+<ul>
+<li>package managers in PHP</li>
+<li>managen van externe libraries</li>
+<li>publishen van eigen libraries</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/05_composer/3">
+<h1>PEAR</h1>
+
+<p>system wide packages (global)</p>
+
+<h1>Composer</h1>
+
+<p>per project packages</p>
+
+<p class="notes">(pear kan ook per package)</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/05_composer/4">
+<h1>Composer</h1>
+
+<ul>
+<li>identieke versies van externe libraries</li>
+<li>code stabiel en voorspelbaar</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/05_composer/5">
+<h1>voorbeeld: Doctrine</h1>
+
+<h2>PEAR</h2>
+
+<pre class="sh_sh"><code>$ pear channel-discover pear.doctrine-project.org
+$ pear install doctrine/DoctrineCommon
+$ pear install doctrine/DoctrineDBAL
+$ pear install doctrine/DoctrineORM
+
+$ doctrine -V
+Doctrine Command Line Interface version 2.1.4</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/05_composer/6">
+<h1>voorbeeld: Doctrine</h1>
+
+<pre class="sh_sh"><code>$ doctrine -V
+Doctrine Command Line Interface version 2.1.4</code></pre>
+
+<p>fork een project, gebruikt.. Doctrine 2.3.0 !</p>
+
+<p>collega developer heeft.. Doctrine 2.2.3 !</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="framework/05_composer/7">
+<h1>voorbeeld: Doctrine</h1>
+
+<p>gebruik Composer
+<img src="./file/framework/../img/logo-composer-transparent.png" alt="composer"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/05_composer/8">
+<h1>voorbeeld: Doctrine</h1>
+
+<p>getcomposer.org</p>
+
+<p>local install</p>
+
+<pre class="sh_sh"><code>$ curl -s http://getcomposer.org/installer | php
+$ php composer.phar --version
+Composer version 6f576d4</code></pre>
+
+<p>system wide install</p>
+
+<pre class="sh_sh"><code>$ curl -s http://getcomposer.org/installer | php
+$ sudo mv composer.phar /usr/local/bin/composer
+$ php composer.phar --version
+Composer version 6f576d4</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center cover" ref="framework/05_composer/9">
+<h1>Composer installed !!!</h1>
+
+<p><img src="./file/framework/../img/success-kid.jpg" alt="background"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/05_composer/10">
+<h1>voorbeeld: Doctrine</h1>
+
+<p>composer.json in project map</p>
+
+<pre class="sh_json"><code>{
+    "require": {
+        "doctrine/orm": "2.3.4"
+    }
+}</code></pre>
+
+<p class="notes">orm heeft dbal nodig en common</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/05_composer/11">
+<h1>voorbeeld: Doctrine</h1>
+
+<pre class="sh_sh"><code>$ composer install
+
+Loading composer repositories with package information
+Installing dependencies
+  - Installing doctrine/common (2.3.0)
+    Loading from cache
+
+  - Installing symfony/console (v2.2.1)
+    Downloading: 100%
+
+  - Installing doctrine/dbal (2.3.4)
+    Downloading: 100%
+
+  - Installing doctrine/orm (2.3.4)
+    Downloading: 100%
+
+doctrine/orm suggests installing symfony/yaml (If you want to use YAML Metadata Mapping Driver)
+Writing lock file
+Generating autoload files</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/05_composer/12">
+<h1>voorbeeld: Doctrine</h1>
+
+<pre class="sh_php"><code>require_once "vendor/autoload.php";</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/05_composer/13">
+<h1>Composer</h1>
+
+<ul>
+<li>composer.json</li>
+<li>composer.lock</li>
+<li>vendor map</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/05_composer/14">
+<h1>Composer</h1>
+
+<p>gebruik versies uit composer.lock</p>
+
+<pre class="sh_sh"><code>$ composer install</code></pre>
+
+<p>update alle versies uit composer.json</p>
+
+<pre class="sh_sh"><code>$ composer update
+$ composer update doctrine/common</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="framework/05_composer/15">
+<h1>Composer</h1>
+
+<p>packagist.org</p>
+
+<p><img src="./file/framework/../img/packagist.png" alt="packagist"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center cover" ref="framework/06_twig/1">
+<h1>Twig</h1>
+
+<p><img src="./file/framework/../img/background-twig.png" alt="background"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/06_twig/2">
+<h1>wat is Twig</h1>
+
+<ul>
+<li>templating language voor PHP</li>
+<li>jinja2 syntax en idee</li>
+<li>flexibel en volledig aanpasbaar</li>
+</ul>
+
+<p class="notes">jinja2 = template engine in python</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/06_twig/3">
+<h1>maar..</h1>
+
+<h1>PHP is een templating language</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/06_twig/4">
+<h1>PHP is een templating language</h1>
+
+<pre class="sh_php"><code>&lt;?php echo $var; // XSS? ?&gt;
+
+&lt;?php echo htmlspecialchars($var, ENT_QOUTES, 'UTF-8'); ?&gt;
+
+&lt;?php echo h($var); ?&gt;</code></pre>
+
+<p>autoescaping in twig:</p>
+
+<pre class="sh_php"><code>{{ var }}</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/06_twig/5">
+<h1>voordelen van Twig</h1>
+
+<ul>
+<li>makkelijke syntax</li>
+<li>automatisch HTML escaping</li>
+<li>veel ingebouwde functies en filters</li>
+<li>uit te breiden met eigen functies en filters</li>
+<li>duidelijke afscheiding van view</li>
+<li>opsplitsing van templates</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="framework/06_twig/6">
+<h1>plain PHP vs. Twig</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/06_twig/7">
+<h1>condities</h1>
+
+<p>plain PHP</p>
+
+<pre class="sh_php"><code>&lt;? php if (!empty($var): ?&gt;
+...
+&lt;?php endif; ?&gt;</code></pre>
+
+<p>Twig</p>
+
+<pre class="sh_php"><code>{% if var %}
+..
+{% endif %}</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/06_twig/8">
+<h1>loops</h1>
+
+<p>plain PHP</p>
+
+<pre class="sh_php"><code>&lt;? php
+
+if (!empty($var):
+    foreach ( (array) $var as $i =&gt; $v ) :
+        printf(
+            '%s : %s',
+            htmlspecialchars($i, ENT_QOUTES, 'UTF-8'),
+            htmlspecialchars($v, ENT_QOUTES, 'UTF-8'));
+    endforeach;
+else:
+    echo 'nothing';
+endif;</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/06_twig/9">
+<h1>loops</h1>
+
+<p>Twig</p>
+
+<pre class="sh_php"><code>{% for i, v in var %}
+    {{ i }} : {{ v }}
+{% else %}
+    nothing
+{% endfor %}</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/06_twig/10">
+<h1>loops</h1>
+
+<p>Twig</p>
+
+<pre class="sh_php"><code>{% for user in users if user.active %}
+    {{ user.name }} : {{ user.email }}
+{% else %}
+    no active users
+{% endfor %}</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="framework/06_twig/11">
+<h1>basis Twig</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/06_twig/12">
+<h1>toegang tot variabelen</h1>
+
+<pre class="sh_php"><code>{{ user }}
+{{ user.name }}
+{{ user['name'] }}</code></pre>
+
+<p class="notes">user kan array zijn, object, met of zonder getters</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/06_twig/13">
+<h1>toegang tot variabelen</h1>
+
+<pre class="sh_php"><code>{{ user }}
+{{ user.name }}</code></pre>
+
+<ul>
+<li>user is een array, met name als key</li>
+<li>user is een object, met name als attribute</li>
+<li>user is een object, met name als functie</li>
+<li>user is een object, met getName functie</li>
+<li>user is een object, met isName functie</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/06_twig/14">
+<h1>variabelen declareren</h1>
+
+<pre class="sh_php"><code>{% set name = 'dave' %}
+
+{% set numbers = [1, 2] %}
+
+{% set users = { 'foo' : 'bar' } %}</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="framework/06_twig/15">
+<h1>control structures</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/06_twig/16">
+<h1>foreach</h1>
+
+<pre class="sh_php"><code>{% for user in users %}
+    {{ user.username }}
+{% endfor %}</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/06_twig/17">
+<h1>for</h1>
+
+<pre class="sh_php"><code>{% for i in 0..10 %}
+    {{ i }}
+{% endfor %}</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/06_twig/18">
+<h1>for-else</h1>
+
+<pre class="sh_php"><code>{% for user in users %}
+    {{ user.username }}
+{% else %}
+    no users found
+{% endfor %}</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/06_twig/19">
+<h1>variabelen in loop</h1>
+
+<pre class="sh_php"><code>{{ loop.index }} // huidige iteratie (vanaf 1)
+
+{{ loop.revindex }} // omgekeerd (vanaf einde)
+
+{{ loop.first }} // true, bij eerste iteratie
+
+{{ loop.length }} // items in loop
+
+{{ loop.parent }} // parent context</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/06_twig/20">
+<h1>if</h1>
+
+<pre class="sh_php"><code>{% if count &lt;= 0 %}
+    no results
+{% endif %}</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="framework/06_twig/21">
+<h1>filters</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/06_twig/22">
+<h1>filters</h1>
+
+<pre class="sh_php"><code>{{ name | upper }}</code></pre>
+
+<p>"dave" =&gt; "DAVE"</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/06_twig/23">
+<h1>filters</h1>
+
+<pre class="sh_php"><code>{{ list | join(', ') }}</code></pre>
+
+<p>array("kona", "scott", "bmc") =&gt; "kona, scott, bmc"</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/06_twig/24">
+<h1>filters</h1>
+
+<pre class="sh_php"><code>{{ list | join(', ') | upper }}</code></pre>
+
+<p>array("kona", "scott", "bmc") =&gt; "KONA, SCOTT, BMC"</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/06_twig/25">
+<h1>filters</h1>
+
+<pre class="sh_php"><code>{{ post.publishDate | date('Y-m-d') }}
+
+{{ stringForJavascript | escape('js') }}
+{{ stringForJavascript | e('js') }}
+
+{{ thisIsHtml | raw }}
+
+{{ iNeedJson | json_encode }}
+
+{{ iHasLineBreaks | nl2br }}
+
+{{ "%s% users" | replace( { '%s%': number } ) }}
+
+{{ "%s users" |  format('no') }}</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="framework/06_twig/26">
+<h1>include, block, extends</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/06_twig/27">
+<h1>include</h1>
+
+<pre class="sh_php"><code>{% include "navigation.html.twig" %}</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/06_twig/28">
+<h1>block, extends</h1>
+
+<p>layout.html.twig</p>
+
+<pre class="sh_php"><code>&lt;html&gt;
+    &lt;body&gt;
+        {% block content %}
+            standaard content
+        {% endblock %}
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+<p>home.html.twig</p>
+
+<pre class="sh_php"><code>{% extends "layout.html.twig" %}
+
+{% block content %}
+    Home!
+{% endblock %}</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/06_twig/29">
+<h1>block, extends</h1>
+
+<p>output</p>
+
+<pre class="sh_html"><code>&lt;html&gt;
+    &lt;body&gt;
+        Home!
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="framework/06_twig/30">
+<h1>eigen functies</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/06_twig/31">
+<p>MyTwigExtension.php</p>
+
+<pre class="sh_php"><code>namespace Project\Extension\Twig;
+
+class MyTwigExtension extends \Twig_Extension
+{
+    public function getFilters()
+    {
+
+    }
+
+    public function getFunctions()
+    {
+        return array(
+            'myFunction' =&gt; new \Twig_Function_Method($this, 'myFunction');
+        );
+    }
+
+    public function myFunction($string)
+    {
+        return 'My function says: '. $string;
+    }
+
+
+}</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/06_twig/32">
+<h1>eigen functies</h1>
+
+<pre class="sh_php"><code>&lt;p&gt;{{ myFunction('hello') }}&lt;/p&gt;</code></pre>
+
+<p>output</p>
+
+<pre class="sh_html"><code>&lt;p&gt;My function says: hello&lt;/p&gt;</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="framework/06_twig/33">
+<h1>macro</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/06_twig/34">
+<h1>macro</h1>
+
+<p>macro.html.twig</p>
+
+<pre class="sh_php"><code>{% macro link(href, text) %}
+    &lt;a href="{{ href }}"&gt;{{ text }}&lt;/a&gt;
+{% endmacro %}</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/06_twig/35">
+<h1>macro</h1>
+
+<p>home.html.twig</p>
+
+<pre class="sh_php"><code>{% import 'macro.html.twig' as helper %}
+
+&lt;p&gt;{{ helper.link('http://www.google.be', 'google') }}&lt;/p&gt;</code></pre>
+
+<p>output</p>
+
+<pre class="sh_html"><code>&lt;p&gt;&lt;a href="http://www.google.be"&gt;google&lt;/a&gt;&lt;/p&gt;</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="framework/06_twig/36">
+<h1>Twig</h1>
+
+<ul>
+<li>veel functionaliteit</li>
+<li>flexibel</li>
+<li>uitbereidbaar</li>
+<li>snel</li>
+<li>veilig</li>
+<li>(werkt goed samen met Symfony2)</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center cover" ref="closing/sources/1">
+<h1>That's it!</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets center smaller" ref="closing/sources/2">
+<h1>Bronnen</h1>
+
+<ul>
+<li>http://flickr.com</li>
+<li>http://google.com</li>
+<li>http://www.slideshare.net/ansarahmed/php-best-practices-2391877</li>
+<li>http://www.slideshare.net/weierophinney/best-practices-of-php-development-presentation</li>
+<li>http://net.tutsplus.com/tutorials/php/30-php-best-practices-for-beginners/</li>
+<li>http://php.blogaboutwhatever.com/2011/12/howto-make-your-live-easier-with-an-autoloader/</li>
+<li>https://phpbestpractices.org</li>
+<li>http://net.tutsplus.com/tutorials/php/why-you-should-be-using-phps-pdo-for-database-access/</li>
+<li>http://net.tutsplus.com/tutorials/php/psr-huh/</li>
+<li>https://github.com/php-fig/fig-standards/tree/master/accepted</li>
+<li>http://www.php-fig.org</li>
+<li>http://php.net/manual</li>
+<li>http://blog.loftdigital.com/blog/php-utf-8-cheatsheet</li>
+<li>http://phpbench.com</li>
+<li>http://khaidoan.wikidot.com/php</li>
+<li>http://htmlpurifier.org</li>
+<li>http://blog.andho.com/2011-12-23/talking-about-composer-a-package-manager-for-php/</li>
+<li>https://speakerdeck.com/csuarez/plantillas-en-symfony2-twig</li>
+<li>http://phpsnips.com/554/Strong-Email-Verification#.UZvI4pVIYlL</li>
+</ul>
+</div>
+</div></div>
+<div id="pauseScreen">
+  
+</div>
+
+</body>
+</html>
